@@ -1,0 +1,12 @@
+set -tmpdir ./xst
+run
+-vlgincdir { "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../backend" "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog" "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/minsoc_startup" "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/or1200/rtl/verilog" "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog" "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/ethmac/rtl/verilog" "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog" }
+-ifn /home/andrey/Anna/Programming/fpga/core/minsoc/prj/../prj/xilinx/minsoc_top.prj
+-ifmt Verilog
+-ofn minsoc_top
+-ofmt NGC
+-p xc6slx45-3-csg324
+-top minsoc_top
+-opt_mode Speed
+-opt_level 1
+-iobuf yes

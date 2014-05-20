@@ -1,0 +1,12 @@
+set -tmpdir ./xst
+run
+-vlgincdir { "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog" }
+-ifn /home/andrey/Anna/Programming/fpga/core/minsoc/prj/../prj/xilinx/uart_top.prj
+-ifmt Verilog
+-ofn uart_top
+-ofmt NGC
+-p xc6slx45-3-csg324
+-top uart_top
+-opt_mode Speed
+-opt_level 1
+-iobuf no
