@@ -1,7 +1,7 @@
 set -tmpdir ./xst
 run
--vlgincdir { "/home/andrey/Anna/Programming/fpga/core/minsoc/prj/../rtl/verilog/ethmac/rtl/verilog" }
--ifn /home/andrey/Anna/Programming/fpga/core/minsoc/prj/../prj/xilinx/ethmac.prj
+-vlgincdir { "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/ethmac/rtl/verilog" }
+-ifn /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../prj/xilinx/ethmac.prj
 -ifmt Verilog
 -ofn ethmac
 -ofmt NGC

@@ -1,0 +1,12 @@
+set -tmpdir ./xst
+run
+-vlgincdir { "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../backend" "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog" "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/vpi" "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/sim_lib" "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog" }
+-ifn /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../prj/xilinx/minsoc_bench.prj
+-ifmt Verilog
+-ofn minsoc_bench
+-ofmt NGC
+-p DEVICE_PART
+-top minsoc_bench
+-opt_mode Speed
+-opt_level 1
+-iobuf no

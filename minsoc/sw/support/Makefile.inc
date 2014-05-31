@@ -12,7 +12,7 @@ DRIVERS := $(DRIVERS_DIR)/libdrivers.a
 
 LINKER_SCRIPT := $(BACKEND_DIR)/orp.ld
 
-OR32_TOOL_PREFIX=or32-linux
+OR32_TOOL_PREFIX=or32-elf
 
 BIN2HEX = $(UTILS_DIR)/bin2hex
 

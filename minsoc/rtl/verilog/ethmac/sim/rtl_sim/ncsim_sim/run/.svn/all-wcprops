@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/sim/rtl_sim/ncsim_sim/run
+END
+run_eth_sim_regr.scr
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/run/run_eth_sim_regr.scr
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/run/clean
+END
+top_groups.do
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/sim/rtl_sim/ncsim_sim/run/top_groups.do
+END

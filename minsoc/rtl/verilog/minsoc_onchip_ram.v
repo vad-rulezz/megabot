@@ -166,6 +166,8 @@ output	[dw-1:0]	doq;	// output data bus
 
 `ifdef SPARTAN3
 	`define MINSOC_XILINX_RAMB16
+`elsif SPARTAN6
+	`define MINSOC_XILINX_RAMB16
 `elsif SPARTAN3E
 	`define MINSOC_XILINX_RAMB16
 `elsif SPARTAN3A
@@ -176,9 +178,7 @@ output	[dw-1:0]	doq;	// output data bus
 	`define MINSOC_XILINX_RAMB16
 `elsif VIRTEX5
 	`define MINSOC_XILINX_RAMB16
-`elsif SPARTAN6
-	`define MINSOC_XILINX_RAMB16
-`endif	// !SPARTAN3/SPARTAN3E/SPARTAN3A/VIRTEX2/VIRTEX4/VIRTEX5/SPARTAN6
+`endif	// !SPARTAN3/SPARTAN3E/SPARTAN3A/VIRTEX2/VIRTEX4/VIRTEX5
 
 
 //

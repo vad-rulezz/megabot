@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/adv_debug_sys/!svn/ver/60/adv_debug_sys/trunk/Software/adv_jtag_bridge
+END
+or32_selftest.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Software/adv_jtag_bridge/or32_selftest.h
+END
+gdb-6.8-bz436037-reg-no-longer-active.patch
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/gdb-6.8-bz436037-reg-no-longer-active.patch
+END
+errcodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Software/adv_jtag_bridge/errcodes.c
+END
+legacy_dbg_commands.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/adv_debug_sys/!svn/ver/14/adv_debug_sys/trunk/Software/adv_jtag_bridge/legacy_dbg_commands.h
+END
+errcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/errcodes.h
+END
+bsdl_parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/57/adv_debug_sys/trunk/Software/adv_jtag_bridge/bsdl_parse.c
+END
+cable_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_common.c
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/configure.ac
+END
+cable_parallel.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_parallel.c
+END
+jsp_server.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/51/adv_debug_sys/trunk/Software/adv_jtag_bridge/jsp_server.c
+END
+bsdl_parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/bsdl_parse.h
+END
+cable_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_common.h
+END
+hwp_server.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/hwp_server.c
+END
+dbg_api.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/dbg_api.c
+END
+cable_parallel.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_parallel.h
+END
+jsp_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/42/adv_debug_sys/trunk/Software/adv_jtag_bridge/jsp_server.h
+END
+spr-defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/spr-defs.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/Makefile.am
+END
+altera_virtual_jtag.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/altera_virtual_jtag.h
+END
+hwp_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/hwp_server.h
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/autogen.sh
+END
+dbg_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/adv_debug_sys/!svn/ver/50/adv_debug_sys/trunk/Software/adv_jtag_bridge/dbg_api.h
+END
+except.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/except.h
+END
+chain_commands.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/chain_commands.c
+END
+hardware_monitor.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/45/adv_debug_sys/trunk/Software/adv_jtag_bridge/hardware_monitor.c
+END
+opencores_tap.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/opencores_tap.h
+END
+adv_dbg_commands.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/adv_dbg_commands.c
+END
+chain_commands.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/14/adv_debug_sys/trunk/Software/adv_jtag_bridge/chain_commands.h
+END
+cable_ft2232.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/adv_debug_sys/!svn/ver/58/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_ft2232.c
+END
+rsp-server.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/adv_debug_sys/!svn/ver/56/adv_debug_sys/trunk/Software/adv_jtag_bridge/rsp-server.c
+END
+hardware_monitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/42/adv_debug_sys/trunk/Software/adv_jtag_bridge/hardware_monitor.h
+END
+utilities.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/utilities.c
+END
+BUILDING
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/BUILDING
+END
+Makefile.classic
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/Makefile.classic
+END
+adv_dbg_commands.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/42/adv_debug_sys/trunk/Software/adv_jtag_bridge/adv_dbg_commands.h
+END
+cable_ft2232.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_ft2232.h
+END
+rsp-server.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Software/adv_jtag_bridge/rsp-server.h
+END
+cable_sim.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_sim.c
+END
+utilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/utilities.h
+END
+cable_sim.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_sim.h
+END
+bsdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/adv_debug_sys/!svn/ver/57/adv_debug_sys/trunk/Software/adv_jtag_bridge/bsdl.c
+END
+bsdl.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/adv_debug_sys/!svn/ver/13/adv_debug_sys/trunk/Software/adv_jtag_bridge/bsdl.h
+END
+cable_ft245.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ocsvn/adv_debug_sys/!svn/ver/58/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_ft245.c
+END
+adv_jtag_bridge.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/adv_jtag_bridge.c
+END
+cable_xpc_dlc9.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_xpc_dlc9.c
+END
+cable_usbblaster.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_usbblaster.c
+END
+BUILDING.classic
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/BUILDING.classic
+END
+or32_selftest.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/adv_debug_sys/!svn/ver/57/adv_debug_sys/trunk/Software/adv_jtag_bridge/or32_selftest.c
+END
+cable_ft245.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_ft245.h
+END
+adv_jtag_bridge.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Software/adv_jtag_bridge/adv_jtag_bridge.h
+END
+cable_xpc_dlc9.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_xpc_dlc9.h
+END
+legacy_dbg_commands.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Software/adv_jtag_bridge/legacy_dbg_commands.c
+END
+cable_usbblaster.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/55/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_usbblaster.h
+END
+cable_usbblaster_ftdi.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Software/adv_jtag_bridge/cable_usbblaster_ftdi.c
+END

@@ -10,7 +10,7 @@ MODEL = static  	#dynamic|static
 VERSION = 0.1
 MODE = debug		#release|debug
 
-INCLUDEDIRS = $(SUPPORT_DIR) $(DRIVERS_DIR)
+INCLUDEDIRS = $(BACKEND_DIR) $(SUPPORT_DIR) $(DRIVERS_DIR)
 #libsystemc or systemc (system ignores lib at the beginning)
 LIBNAMES = 
 LIBDIRS = 
@@ -25,9 +25,9 @@ DEBUGFLAGS = -g -O0
 RELEASEFLAGS = -O2 -fomit-frame-pointer
 
 CFLAGS = -Wall
-CC = or32-linux-gcc
-AR = or32-linux-ar
-RANLIB = or32-linux-ranlib
+CC = or32-elf-gcc
+AR = or32-elf-ar
+RANLIB = or32-elf-ranlib
 
 CFLAGS += $(GCC_OPT)
 
@@ -115,7 +115,7 @@ $(BINARY): $(EXECUTABLE)
 	$(OR32_TOOL_PREFIX)-objcopy -O binary $? $@
 
 #except.o and reset.o should be already inside of $(SUPPORT) (libsupport.a) but for some reason the compiler ignores that fact
-#(e.g. or32-linux-objdump -t libsupport.a shows it)
+#(e.g. or32-elf-objdump -t libsupport.a shows it)
 $(EXECUTABLE): $(OBJS) ../support/except.o ../support/reset.o $(SUPPORT) $(DRIVERS)
 	$(CC) $(CFLAGS) $(GCC_LIB_OPTS) -T $(LINKER_SCRIPT) $^ -o $@
 

@@ -1,0 +1,6 @@
+`include "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../backend/minsoc_bench_defines.v"
+`include "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/minsoc_bench.v"
+`include "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/minsoc_memory_model.v"
+`include "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/vpi/dbg_comm_vpi.v"
+`include "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/sim_lib/fpga_memory_primitives.v"
+`include "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/timescale.v"

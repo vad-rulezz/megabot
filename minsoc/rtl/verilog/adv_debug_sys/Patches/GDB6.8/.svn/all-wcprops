@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/adv_debug_sys/!svn/ver/51/adv_debug_sys/trunk/Patches/GDB6.8
+END
+gdb-6.8-bz436037-reg-no-longer-active.patch
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ocsvn/adv_debug_sys/!svn/ver/51/adv_debug_sys/trunk/Patches/GDB6.8/gdb-6.8-bz436037-reg-no-longer-active.patch
+END

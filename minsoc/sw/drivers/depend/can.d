@@ -1,1 +1,1 @@
-can.o: can.c ../support/support.h interconnect.h can.h
+can.o: can.c ../../backend/board.h ../support/support.h can.h

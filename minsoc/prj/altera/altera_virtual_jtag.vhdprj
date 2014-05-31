@@ -1,0 +1,2 @@
+set_global_assignment -name SEARCH_PATH /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/altera_virtual_jtag/rtl/vhdl/
+set_global_assignment -name VHDL_FILE /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/altera_virtual_jtag/rtl/vhdl//altera_virtual_jtag.vhd

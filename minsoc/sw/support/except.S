@@ -6,9 +6,9 @@
 /*
    .org 0x100
 
-   reset:
+   _reset:
    l.nop
-   l.j    reset_except
+   l.j    _reset_except
    l.nop
  */
 
@@ -29,59 +29,59 @@ l.j    CLABEL(handler)      ;\
 l.nop
 
 .org 0x000
-except_200:
+_except_200:
 intr_handler(buserr_except)
 
 	.org 0x100
-	except_300:
+	_except_300:
 intr_handler(dpf_except)
 
 	.org 0x200
-	except_400:
+	_except_400:
 intr_handler(ipf_except)
 
 	.org 0x300
-	except_500:
+	_except_500:
 intr_handler(tick_except)
 
 	.org 0x400
-	except_600:
+	_except_600:
 intr_handler(align_except)
 
 	.org 0x500
-	except_700:
+	_except_700:
 intr_handler(illegal_except)
 
 	.org 0x600
-	except_800:
+	_except_800:
 intr_handler(ext_except)
 
 	.org 0x700
-	except_900:
+	_except_900:
 intr_handler(dtlbmiss_except)
 
 	.org 0x800
-	except_a00:
+	_except_a00:
 intr_handler(itlbmiss_except)
 
 	.org 0x900
-	except_b00:
+	_except_b00:
 intr_handler(range_except)
 
 	.org 0xa00
-	except_c00:
+	_except_c00:
 intr_handler(syscall_except)
 
 	.org 0xb00
-	except_d00:
+	_except_d00:
 intr_handler(res1_except)
 
 	.org 0xc00
-	except_e00:
+	_except_e00:
 intr_handler(trap_except)
 
 	.org 0xd00
-	except_f00:
+	_except_f00:
 intr_handler(res2_except)
 
 	store_regs:        //save registers r3-r31 (except r9) to stack

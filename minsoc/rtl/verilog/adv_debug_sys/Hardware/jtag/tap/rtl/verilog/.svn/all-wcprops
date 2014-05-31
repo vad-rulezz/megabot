@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/adv_debug_sys/!svn/ver/69/adv_debug_sys/trunk/Hardware/jtag/tap/rtl/verilog
+END
+tap_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/adv_debug_sys/!svn/ver/69/adv_debug_sys/trunk/Hardware/jtag/tap/rtl/verilog/tap_top.v
+END
+tap_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Hardware/jtag/tap/rtl/verilog/tap_defines.v
+END

@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ocsvn/ethmac/!svn/ver/368/ethmac/trunk/rtl/verilog
+END
+eth_rxaddrcheck.v
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/ethmac/!svn/ver/354/ethmac/trunk/rtl/verilog/eth_rxaddrcheck.v
+END
+eth_receivecontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/ethmac/!svn/ver/354/ethmac/trunk/rtl/verilog/eth_receivecontrol.v
+END
+eth_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ocsvn/ethmac/!svn/ver/365/ethmac/trunk/rtl/verilog/eth_fifo.v
+END
+eth_register.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_register.v
+END
+eth_clockgen.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/353/ethmac/trunk/rtl/verilog/eth_clockgen.v
+END
+eth_miim.v
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ocsvn/ethmac/!svn/ver/354/ethmac/trunk/rtl/verilog/eth_miim.v
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/rtl/verilog/BUGS
+END
+ethmac_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/ethmac/!svn/ver/367/ethmac/trunk/rtl/verilog/ethmac_defines.v
+END
+xilinx_dist_ram_16x32.v
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/rtl/verilog/xilinx_dist_ram_16x32.v
+END
+eth_outputcontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_outputcontrol.v
+END
+eth_maccontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_maccontrol.v
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/rtl/verilog/TODO
+END
+ethmac.v
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ocsvn/ethmac/!svn/ver/367/ethmac/trunk/rtl/verilog/ethmac.v
+END
+eth_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ocsvn/ethmac/!svn/ver/366/ethmac/trunk/rtl/verilog/eth_top.v
+END
+eth_transmitcontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ocsvn/ethmac/!svn/ver/353/ethmac/trunk/rtl/verilog/eth_transmitcontrol.v
+END
+eth_macstatus.v
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_macstatus.v
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/rtl/verilog/timescale.v
+END
+eth_registers.v
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/ethmac/!svn/ver/360/ethmac/trunk/rtl/verilog/eth_registers.v
+END
+eth_crc.v
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_crc.v
+END
+eth_rxstatem.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/354/ethmac/trunk/rtl/verilog/eth_rxstatem.v
+END
+eth_txstatem.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_txstatem.v
+END
+eth_rxethmac.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/354/ethmac/trunk/rtl/verilog/eth_rxethmac.v
+END
+eth_shiftreg.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/355/ethmac/trunk/rtl/verilog/eth_shiftreg.v
+END
+eth_spram_256x32.v
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/ethmac/!svn/ver/358/ethmac/trunk/rtl/verilog/eth_spram_256x32.v
+END
+eth_rxcounters.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/ethmac/!svn/ver/354/ethmac/trunk/rtl/verilog/eth_rxcounters.v
+END
+eth_txethmac.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/353/ethmac/trunk/rtl/verilog/eth_txethmac.v
+END
+eth_txcounters.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/ethmac/!svn/ver/353/ethmac/trunk/rtl/verilog/eth_txcounters.v
+END
+eth_wishbone.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/368/ethmac/trunk/rtl/verilog/eth_wishbone.v
+END
+eth_random.v
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_random.v
+END
+eth_cop.v
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ocsvn/ethmac/!svn/ver/352/ethmac/trunk/rtl/verilog/eth_cop.v
+END

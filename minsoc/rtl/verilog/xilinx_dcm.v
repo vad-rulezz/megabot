@@ -27,12 +27,10 @@ output clk_o;
         `define XILINX_DCM
 `endif  // !SPARTAN3/VIRTEX2
 
-`ifdef SPARTAN3E
+`ifdef SPARTAN6 //SPARTAN3E
         `define XILINX_DCM_SP
 `elsif SPARTAN3A
         `define XILINX_DCM_SP
-`elsif SPARTAN6
-	`define XILINX_DCM_SP
 `endif  // !SPARTAN3E/SPARTAN3A
 
 `ifdef VIRTEX4

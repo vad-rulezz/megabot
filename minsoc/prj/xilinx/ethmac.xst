@@ -1,0 +1,12 @@
+set -tmpdir ./xst
+run
+-vlgincdir { "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/ethmac/rtl/verilog" }
+-ifn /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../prj/xilinx/ethmac.prj
+-ifmt Verilog
+-ofn ethmac
+-ofmt NGC
+-p DEVICE_PART
+-top ethmac
+-opt_mode Speed
+-opt_level 1
+-iobuf no

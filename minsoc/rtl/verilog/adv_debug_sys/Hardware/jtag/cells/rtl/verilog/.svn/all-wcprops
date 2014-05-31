@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Hardware/jtag/cells/rtl/verilog
+END
+InputCell.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Hardware/jtag/cells/rtl/verilog/InputCell.v
+END
+ControlCell.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Hardware/jtag/cells/rtl/verilog/ControlCell.v
+END
+OutputCell.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Hardware/jtag/cells/rtl/verilog/OutputCell.v
+END
+BiDirectionalCell.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/adv_debug_sys/!svn/ver/8/adv_debug_sys/trunk/Hardware/jtag/cells/rtl/verilog/BiDirectionalCell.v
+END

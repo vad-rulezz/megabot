@@ -1,0 +1,49 @@
+10
+
+dir
+108
+http://opencores.org/ocsvn/uart16550/uart16550/trunk
+http://opencores.org/ocsvn/uart16550
+
+
+
+2009-03-10T10:08:42.558482Z
+106
+root
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+0cf51931-e26d-4c82-8aa7-119e809e6da2
+
+doc
+dir
+
+lint
+dir
+
+sim
+dir
+
+syn
+dir
+
+fv
+dir
+
+bench
+dir
+
+rtl
+dir
+

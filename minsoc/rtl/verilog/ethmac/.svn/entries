@@ -1,0 +1,77 @@
+10
+
+dir
+368
+http://opencores.org/ocsvn/ethmac/ethmac/trunk
+http://opencores.org/ocsvn/ethmac
+
+
+
+2012-02-14T18:48:05.011998Z
+368
+olof
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+6d336fd2-2a17-44c4-b403-220f6aeeb104
+
+rtl
+dir
+
+doc
+dir
+
+scripts
+dir
+
+sim
+dir
+
+README.txt
+file
+
+
+
+
+2014-05-27T14:12:01.798262Z
+b70a3a5d62d5c00121bafadb9494bc9a
+2011-07-18T20:23:38.671283Z
+348
+olof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4773
+
+bench
+dir
+

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/bench/verilog
+END
+wb_bus_mon.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/bench/verilog/wb_bus_mon.v
+END
+eth_host.v
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/eth_host.v
+END
+eth_phy_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/eth_phy_defines.v
+END
+wb_slave_behavioral.v
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/wb_slave_behavioral.v
+END
+tb_ethernet_with_cop.v
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/bench/verilog/tb_ethernet_with_cop.v
+END
+wb_master_behavioral.v
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/wb_master_behavioral.v
+END
+eth_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/eth_phy.v
+END
+tb_eth_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/tb_eth_defines.v
+END
+tb_ethernet.v
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/bench/verilog/tb_ethernet.v
+END
+wb_model_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/wb_model_defines.v
+END
+tb_cop.v
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/bench/verilog/tb_cop.v
+END
+tb_eth_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/bench/verilog/tb_eth_top.v
+END
+eth_memory.v
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/eth_memory.v
+END
+wb_master32.v
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/ethmac/!svn/ver/346/ethmac/trunk/bench/verilog/wb_master32.v
+END

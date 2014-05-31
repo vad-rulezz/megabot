@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/adv_debug_sys/!svn/ver/56/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl
+END
+mainControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/mainControl.java
+END
+ReadRegisterTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/ReadRegisterTransaction.java
+END
+targetTransactor.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/targetTransactor.java
+END
+guiServerGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/guiServerGroup.java
+END
+guiDCRGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/guiDCRGroup.java
+END
+guiCountRegsGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/guiCountRegsGroup.java
+END
+TargetTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/TargetTransaction.java
+END
+RegisterObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/RegisterObserver.java
+END
+TargetRunningTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/TargetRunningTransaction.java
+END
+networkSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/networkSystem.java
+END
+LogMessageObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/LogMessageObserver.java
+END
+guiControlGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/guiControlGroup.java
+END
+WriteRegisterTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/WriteRegisterTransaction.java
+END
+NetworkStatusObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/NetworkStatusObserver.java
+END
+AdvancedWatchpointControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/AdvancedWatchpointControl.java
+END
+registerInterpreter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/ocsvn/adv_debug_sys/!svn/ver/56/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/registerInterpreter.java
+END
+targetDebugRegisterSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/targetDebugRegisterSet.java
+END
+rspCoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ocsvn/adv_debug_sys/!svn/ver/54/adv_debug_sys/trunk/Software/AdvancedWatchpointControl/src/advancedWatchpointControl/rspCoder.java
+END

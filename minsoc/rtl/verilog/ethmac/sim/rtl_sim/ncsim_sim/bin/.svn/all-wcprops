@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin
+END
+ncelab_xilinx.args
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/ncelab_xilinx.args
+END
+artisan_file_list.lst
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/artisan_file_list.lst
+END
+ncsim.rc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/ncsim.rc
+END
+rtl_file_list.lst
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/ethmac/!svn/ver/364/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/rtl_file_list.lst
+END
+cds.lib
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/cds.lib
+END
+hdl.var
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/hdl.var
+END
+ncelab.args
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/ncelab.args
+END
+ncsim_waves.rc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/ncsim_waves.rc
+END
+sim_file_list.lst
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/sim_file_list.lst
+END
+vs_file_list.lst
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/vs_file_list.lst
+END
+xilinx_file_list.lst
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/ethmac/!svn/ver/338/ethmac/trunk/sim/rtl_sim/ncsim_sim/bin/xilinx_file_list.lst
+END

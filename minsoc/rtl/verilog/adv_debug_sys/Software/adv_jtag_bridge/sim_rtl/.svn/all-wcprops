@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/sim_rtl
+END
+dbg_comm_vpi.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/adv_debug_sys/!svn/ver/32/adv_debug_sys/trunk/Software/adv_jtag_bridge/sim_rtl/dbg_comm_vpi.v
+END
+dbg_comm.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/adv_debug_sys/!svn/ver/59/adv_debug_sys/trunk/Software/adv_jtag_bridge/sim_rtl/dbg_comm.v
+END

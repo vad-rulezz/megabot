@@ -1,0 +1,12 @@
+set -tmpdir ./xst
+run
+-vlgincdir { "/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/altera_virtual_jtag/rtl/vhdl/" }
+-ifn /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../prj/xilinx/altera_virtual_jtag.prj
+-ifmt Verilog
+-ofn altera_virtual_jtag
+-ofmt NGC
+-p DEVICE_PART
+-top altera_virtual_jtag
+-opt_mode Speed
+-opt_level 1
+-iobuf no

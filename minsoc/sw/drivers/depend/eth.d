@@ -1,1 +1,1 @@
-eth.o: eth.c ../support/support.h interconnect.h eth.h
+eth.o: eth.c ../../backend/board.h ../support/support.h eth.h

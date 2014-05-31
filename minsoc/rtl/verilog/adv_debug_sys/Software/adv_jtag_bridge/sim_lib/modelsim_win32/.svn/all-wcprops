@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/adv_debug_sys/!svn/ver/51/adv_debug_sys/trunk/Software/adv_jtag_bridge/sim_lib/modelsim_win32
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/adv_debug_sys/!svn/ver/51/adv_debug_sys/trunk/Software/adv_jtag_bridge/sim_lib/modelsim_win32/Makefile
+END
+jp-io-vpi.dll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/adv_debug_sys/!svn/ver/51/adv_debug_sys/trunk/Software/adv_jtag_bridge/sim_lib/modelsim_win32/jp-io-vpi.dll
+END

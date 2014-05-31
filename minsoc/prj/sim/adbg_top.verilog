@@ -1,0 +1,16 @@
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_crc32.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_defines.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_jsp_biu.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_jsp_module.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_biu.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_defines.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_module.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_status_reg.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_top.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_biu.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_defines.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_module.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/bytefifo.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/syncflop.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/syncreg.v

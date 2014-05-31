@@ -1,0 +1,12 @@
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_top.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_sync_flops.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_transmitter.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_debug_if.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_wb.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_receiver.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_tfifo.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_regs.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_rfifo.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/uart_defines.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/uart16550/rtl/verilog/raminfr.v

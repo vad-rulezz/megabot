@@ -1,5 +1,4 @@
 `include "minsoc_defines.v"
-`include "interconnect_defines.v"
 `include "or1200_defines.v"
 
 module minsoc_top (
@@ -119,15 +118,16 @@ wire			wb_dm_err_i;
 //
 // Debug core JSP slave i/f wires
 //
-wire	[31:0]	wb_jsp_dat_i;
-wire	[31:0]	wb_jsp_dat_o;
-wire	[31:0]	wb_jsp_adr_i;
-wire	[3:0]	wb_jsp_sel_i;
-wire			wb_jsp_we_i;
-wire			wb_jsp_cyc_i;
-wire			wb_jsp_stb_i;
-wire			wb_jsp_ack_o;
-wire			wb_jsp_err_o;
+wire	[31:0]		wb_jsp_dat_i;
+wire	[31:0]		wb_jsp_dat_o;
+wire	[31:0]		wb_jsp_adr_i;
+wire	[3:0]		wb_jsp_sel_i;
+wire	wb_jsp_we_i;
+wire	wb_jsp_cyc_i;
+wire	wb_jsp_stb_i;
+wire	wb_jsp_ack_o;
+wire	wb_jsp_err_o;
+
 
 //
 // Debug <-> RISC wires
@@ -317,6 +317,13 @@ clk_adjust (
 );
 
 //
+// Unused WISHBONE signals
+//
+assign wb_us_err_o = 1'b0;
+assign wb_fs_err_o = 1'b0;
+assign wb_sp_err_o = 1'b0;
+
+//
 // Unused interrupts
 //
 assign pic_ints[`APP_INT_RES1] = 'b0;
@@ -427,7 +434,6 @@ adbg_top dbg_top  (
       .debug_select_i( debug_select ),
 	// WISHBONE common
       .wb_clk_i   ( wb_clk ),
-      .wb_rst_i   ( wb_rst ),
 
       // WISHBONE master interface
       .wb_adr_o  ( wb_dm_adr_o ),
@@ -447,15 +453,12 @@ adbg_top dbg_top  (
       .cpu0_addr_o ( dbg_adr ),
       .cpu0_data_i ( dbg_dat_risc ),
       .cpu0_data_o ( dbg_dat_dbg ),
-      .cpu0_bp_i   ( (dbg_bp | (| dbg_wp[10:0])) ),
+      .cpu0_bp_i   ( dbg_bp ),
       .cpu0_stall_o( dbg_stall ),
       .cpu0_stb_o  ( dbg_stb ),
       .cpu0_we_o   ( dbg_we ),
       .cpu0_ack_i  ( dbg_ack ),
       .cpu0_rst_o  ( ),
-
-      // WISHBONE slave interface (JTAG UART)
-`ifdef JSP
       .wb_jsp_adr_i	( wb_jsp_adr_i[31:0] ),
       .wb_jsp_dat_i	( wb_jsp_dat_i[31:0] ),
       .wb_jsp_dat_o	( wb_jsp_dat_o[31:0] ),
@@ -467,37 +470,12 @@ adbg_top dbg_top  (
       .wb_jsp_cab_i	( 1'b0 ),
       .wb_jsp_cti_i	( 3'b0 ),
       .wb_jsp_bte_i	( 2'b0 ),
-
-       // Interrupt request
+        // Interrupt request
       .int_o ( pic_ints[`APP_INT_JSP] )
-`else
-      .wb_jsp_adr_i	( 32'h0000_0000 ),
-      .wb_jsp_dat_i	( 32'h0000_0000 ),
-      .wb_jsp_dat_o	( ),
-      .wb_jsp_we_i	( 1'b0 ),
-      .wb_jsp_stb_i	( 1'b0 ),
-      .wb_jsp_cyc_i	( 1'b0 ),
-      .wb_jsp_ack_o	( ),
-      .wb_jsp_sel_i	( 4'h0 ),
-      .wb_jsp_cab_i	( 1'b0 ),
-      .wb_jsp_cti_i	( 3'b0 ),
-      .wb_jsp_bte_i	( 2'b0 ),
 
-       // Interrupt request
-      .int_o ( )
-`endif
 );
-
-`ifdef JSP
-    assign wb_jsp_err_o = 1'b0;
-`else
-	assign wb_jsp_dat_o = 32'h0000_0000;
-	assign wb_jsp_ack_o = 1'b0;
-    assign wb_jsp_err_o = 1'b1;
-	assign pic_ints[`APP_INT_JSP] = 1'b0;
-`endif
-
-
+ assign wb_jsp_err_o = 1'b0;
+ 
 //
 // JTAG TAP controller instantiation
 //
@@ -680,17 +658,11 @@ spi_flash_top0
    .sclk_pad_o(spi_flash_sclk),
    .ss_pad_o(spi_flash_ss)
 );
-
-assign wb_fs_err_o = 1'b0;
-assign wb_sp_err_o = 1'b0;
-
 `else
 assign wb_fs_dat_o = 32'h0000_0000;
 assign wb_fs_ack_o = 1'b0;
-assign wb_fs_err_o = 1'b1;
 assign wb_sp_dat_o = 32'h0000_0000;
 assign wb_sp_ack_o = 1'b0;
-assign wb_sp_err_o = 1'b1;
 `endif
 
 //
@@ -758,12 +730,9 @@ uart_top uart_top (
 	.ri_pad_i	( 1'b0 ),
 	.dcd_pad_i	( 1'b0 )
 );
-
-assign wb_us_err_o = 1'b0;
 `else
 assign wb_us_dat_o = 32'h0000_0000;
 assign wb_us_ack_o = 1'b0;
-assign wb_us_err_o = 1'b1;
 
 assign pic_ints[`APP_INT_UART] = 1'b0;
 `endif
@@ -826,7 +795,7 @@ ethmac ethmac (
 `else
 assign wb_es_dat_o = 32'h0000_0000;
 assign wb_es_ack_o = 1'b0;
-assign wb_es_err_o = 1'b1;
+assign wb_es_err_o = 1'b0;
 
 assign wb_em_adr_o = 32'h0000_0000;
 assign wb_em_sel_o = 4'h0;
@@ -851,9 +820,10 @@ minsoc_tc_top #(`APP_ADDR_DEC_W,
 	 `APP_ADDR_SPI,
 	 `APP_ADDR_ETH,
 	 `APP_ADDR_AUDIO,
-	 `APP_ADDR_UART,	 
-	 `APP_ADDR_PS2,
+	 `APP_ADDR_UART,
 	 `APP_ADDR_JSP,
+	 `APP_ADDR_PS2,
+//	 `APP_ADDR_RES1,
 	 `APP_ADDR_RES2
 	) tc_top (
 
@@ -1013,8 +983,8 @@ minsoc_tc_top #(`APP_ADDR_DEC_W,
 	.t5_wb_dat_o	( wb_us_dat_i ),
 	.t5_wb_dat_i	( wb_us_dat_o ),
 	.t5_wb_ack_i	( wb_us_ack_o ),
-    .t5_wb_err_i	( wb_us_err_o ),
-	
+	.t5_wb_err_i	( wb_us_err_o ),
+
 	// WISHBONE Target 6
 	.t6_wb_cyc_o	( ),
 	.t6_wb_stb_o	( ),
@@ -1027,17 +997,17 @@ minsoc_tc_top #(`APP_ADDR_DEC_W,
 	.t6_wb_err_i	( 1'b1 ),
 
 	// WISHBONE Target 7
-    .t7_wb_cyc_o	( wb_jsp_cyc_i ),
-    .t7_wb_stb_o	( wb_jsp_stb_i ),
-    .t7_wb_adr_o	( wb_jsp_adr_i ),
-    .t7_wb_sel_o	( wb_jsp_sel_i ),
-    .t7_wb_we_o	( wb_jsp_we_i  ),
-    .t7_wb_dat_o	( wb_jsp_dat_i ),
-    .t7_wb_dat_i	( wb_jsp_dat_o ),
-    .t7_wb_ack_i	( wb_jsp_ack_o ),
-    .t7_wb_err_i	( wb_jsp_err_o ),
+	.t7_wb_cyc_o	(wb_jsp_cyc_i ),
+	.t7_wb_stb_o	(wb_jsp_stb_i  ),
+	.t7_wb_adr_o	(wb_jsp_adr_i ),
+	.t7_wb_sel_o	(wb_jsp_sel_i  ),
+	.t7_wb_we_o	(  wb_jsp_we_i ),
+	.t7_wb_dat_o	(wb_jsp_dat_i  ),
+	.t7_wb_dat_i	( wb_jsp_dat_o  ),
+	.t7_wb_ack_i	(wb_jsp_ack_o   ),
+	.t7_wb_err_i	( wb_jsp_err_o  ),
 
-    // WISHBONE Target 8
+	// WISHBONE Target 8
 	.t8_wb_cyc_o	( ),
 	.t8_wb_stb_o	( ),
 	.t8_wb_adr_o	( ),

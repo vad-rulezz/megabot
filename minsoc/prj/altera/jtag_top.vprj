@@ -1,0 +1,3 @@
+set_global_assignment -name SEARCH_PATH /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/jtag/tap/rtl/verilog
+set_global_assignment -name VERILOG_FILE /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/jtag/tap/rtl/verilog/tap_top.v
+set_global_assignment -name VERILOG_FILE /home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/adv_debug_sys/Hardware/jtag/tap/rtl/verilog/tap_defines.v

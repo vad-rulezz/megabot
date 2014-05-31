@@ -75,7 +75,7 @@ minsoc.ngd: ${MINSOC}/backend/CONSTRAINT_FILE minsoc_top.ngc $(MODULES)
 	ngdbuild -p DEVICE_PART -uc ${MINSOC}/backend/CONSTRAINT_FILE -aul minsoc_top.ngc minsoc.ngd
 
 minsoc.ncd: minsoc.ngd
-	map -bp -timing -cm speed -equivalent_register_removal on -logic_opt on -ol high -power off -register_duplication on -retiming on -w -xe n minsoc.ngd
+	map -bp -timing -equivalent_register_removal on -logic_opt on -ol high -power off -register_duplication on -retiming on -w -xe n minsoc.ngd
 
 minsoc_par.ncd: minsoc.ncd
 	par -ol high -w -xe n minsoc.ncd minsoc_par.ncd

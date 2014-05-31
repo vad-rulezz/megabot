@@ -4,12 +4,12 @@
 
     .section .stack
     .space STACK_SIZE
-stack:
+_stack:
 
     .section .reset, "ax"
 
     .org    0x100
-reset_vector:
+_reset_vector:
     l.nop
     l.nop
     l.addi  r2,r0,0x0
@@ -49,14 +49,14 @@ reset_vector:
     l.addi  r5,r0,0x00
     l.sw    0(r3),r5
 */      
-    l.movhi r3,hi(start)
-    l.ori   r3,r3,lo(start)
+    l.movhi r3,hi(_start)
+    l.ori   r3,r3,lo(_start)
     l.jr    r3
     l.nop
 
     .section .text
 
-start:
+_start:
 
 .if IC | DC
     /* Flush IC and/or DC */
@@ -101,8 +101,8 @@ loop:
 .endif
 
 /* Set stack pointer */
-    l.movhi r1,hi(stack)
-    l.ori   r1,r1,lo(stack)
+    l.movhi r1,hi(_stack)
+    l.ori   r1,r1,lo(_stack)
 
 /* Jump to main */
     l.movhi r2,hi(CLABEL(reset))

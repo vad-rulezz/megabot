@@ -1,0 +1,11 @@
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../backend
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/vpi
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/sim_lib
++incdir+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../backend/minsoc_bench_defines.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/minsoc_bench.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/minsoc_memory_model.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/vpi/dbg_comm_vpi.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../bench/verilog/sim_lib/fpga_memory_primitives.v
+/home/andrey/Anna/Programming/fpga/core/pipistrello/minsoc1/minsoc/prj/../rtl/verilog/timescale.v

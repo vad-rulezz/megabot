@@ -1,4 +1,4 @@
-#include <interconnect.h>
+#include <board.h>
 #include <support.h>
 #include <or1200.h>
 #include <int.h>
@@ -7,7 +7,7 @@
 
 int main()
 {
-	uart_init(UART_BASE);
+	uart_init();
 
 	int_init();
 	int_add(UART_IRQ, &uart_interrupt, NULL);
