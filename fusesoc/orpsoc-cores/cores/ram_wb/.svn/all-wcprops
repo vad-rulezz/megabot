@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/ram_wb
+END
+ram_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/ram_wb/ram_wb.v
+END
+ram_wb.core
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/ram_wb/ram_wb.core
+END
+ram_wb_b3.v
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/ram_wb/ram_wb_b3.v
+END
+ram_wb_loader.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/ram_wb/ram_wb_loader.v
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/jtag_tap/patches
+END
+0002-remove-defines.diff
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/jtag_tap/patches/0002-remove-defines.diff
+END
+0000-idcode-value-as-parameter.diff
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/jtag_tap/patches/0000-idcode-value-as-parameter.diff
+END
+0001-remove-delay-assignments.diff
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/jtag_tap/patches/0001-remove-delay-assignments.diff
+END
+0003-correct-idcode-width.diff
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/jtag_tap/patches/0003-correct-idcode-width.diff
+END

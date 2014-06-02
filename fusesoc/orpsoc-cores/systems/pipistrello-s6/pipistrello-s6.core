@@ -1,0 +1,34 @@
+CAPI=1
+[main]
+depend =
+ adv_debug_sys
+ jtag_tap
+ xilinx_internal_jtag
+ or1200
+ elf-loader
+ uart16550
+ wb_intercon
+; wb_sdram_ctrl
+
+
+simulators =
+ icarus
+
+
+[verilog]
+src_files =
+ rtl/verilog/orpsoc_top.v
+ rtl/verilog/clkgen.v
+ rtl/verilog/rom.v
+ rtl/verilog/wb_intercon.v
+
+include_files =
+ rtl/verilog/include/orpsoc-defines.v
+ rtl/verilog/include/or1200_defines.v
+ rtl/verilog/include/timescale.v
+ rtl/verilog/include/uart_defines.v
+ rtl/verilog/wb_intercon.vh
+
+[icarus]
+iverilog_options = -DICARUS_SIM -DSIM
+

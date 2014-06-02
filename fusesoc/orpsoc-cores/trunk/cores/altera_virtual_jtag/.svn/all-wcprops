@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/openrisc/orpsoc-cores/!svn/ver/35/trunk/cores/altera_virtual_jtag
+END
+altera_virtual_jtag.v
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/openrisc/orpsoc-cores/!svn/ver/35/trunk/cores/altera_virtual_jtag/altera_virtual_jtag.v
+END
+altera_virtual_jtag.core
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/35/trunk/cores/altera_virtual_jtag/altera_virtual_jtag.core
+END

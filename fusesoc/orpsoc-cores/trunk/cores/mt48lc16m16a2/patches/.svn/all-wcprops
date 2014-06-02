@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/38/trunk/cores/mt48lc16m16a2/patches
+END
+0004-Add-init_clear_mem-banks-parameter.patch
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/openrisc/orpsoc-cores/!svn/ver/38/trunk/cores/mt48lc16m16a2/patches/0004-Add-init_clear_mem-banks-parameter.patch
+END
+0001-Convert-EOL-from-dos-to-Linux.patch
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/openrisc/orpsoc-cores/!svn/ver/37/trunk/cores/mt48lc16m16a2/patches/0001-Convert-EOL-from-dos-to-Linux.patch
+END
+0002-Add-get-set-byte-short-tasks.patch
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/openrisc/orpsoc-cores/!svn/ver/37/trunk/cores/mt48lc16m16a2/patches/0002-Add-get-set-byte-short-tasks.patch
+END
+0003-Turn-off-debug-message-by-default.patch
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/openrisc/orpsoc-cores/!svn/ver/37/trunk/cores/mt48lc16m16a2/patches/0003-Turn-off-debug-message-by-default.patch
+END

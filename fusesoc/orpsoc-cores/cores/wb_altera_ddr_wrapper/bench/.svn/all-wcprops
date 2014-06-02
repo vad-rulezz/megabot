@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/bench
+END
+wb_ddr_ctrl_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/bench/wb_ddr_ctrl_tb.v
+END

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/openrisc/orpsoc-cores/!svn/ver/50/trunk/cores/wb_avalon_bridge
+END
+wb_avalon_bridge.core
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/openrisc/orpsoc-cores/!svn/ver/27/trunk/cores/wb_avalon_bridge/wb_avalon_bridge.core
+END

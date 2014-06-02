@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/rtl/verilog
+END
+wb_intercon.vh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/rtl/verilog/wb_intercon.vh
+END
+clkgen.v
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/openrisc/orpsoc-cores/!svn/ver/31/trunk/systems/de0_nano/rtl/verilog/clkgen.v
+END
+orpsoc_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/rtl/verilog/orpsoc_top.v
+END
+wb_intercon.v
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/rtl/verilog/wb_intercon.v
+END
+rom.v
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/31/trunk/systems/de0_nano/rtl/verilog/rom.v
+END

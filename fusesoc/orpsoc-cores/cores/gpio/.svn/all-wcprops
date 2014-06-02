@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/openrisc/orpsoc-cores/!svn/ver/24/trunk/cores/gpio
+END
+gpio.core
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/openrisc/orpsoc-cores/!svn/ver/24/trunk/cores/gpio/gpio.core
+END
+gpio.v
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/openrisc/orpsoc-cores/!svn/ver/24/trunk/cores/gpio/gpio.v
+END

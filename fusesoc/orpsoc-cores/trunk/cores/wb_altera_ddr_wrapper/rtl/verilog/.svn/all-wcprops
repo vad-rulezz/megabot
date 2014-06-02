@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/openrisc/orpsoc-cores/!svn/ver/120/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog
+END
+dpram_altera.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/dpram_altera.v
+END
+bufram.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/bufram.v
+END
+wb_port.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/116/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/wb_port.v
+END
+ddr_ctrl_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/ddr_ctrl_wrapper.v
+END
+dual_clock_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/dual_clock_fifo.v
+END
+wb_port_arbiter.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/openrisc/orpsoc-cores/!svn/ver/120/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/wb_port_arbiter.v
+END
+wb_ddr_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/rtl/verilog/wb_ddr_ctrl.v
+END

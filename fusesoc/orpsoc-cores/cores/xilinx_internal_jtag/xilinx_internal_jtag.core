@@ -1,0 +1,8 @@
+CAPI=1
+[main]
+description = "Xilinx internal jtag"
+
+[verilog]
+src_files = 
+    rtl/verilog/xilinx_internal_jtag.v
+    rtl/verilog/xilinx_internal_jtag_options.v

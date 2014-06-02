@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip
+END
+alt_mem_ddrx_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_fifo.v
+END
+alt_mem_ddrx_tbp.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_tbp.v
+END
+ddr_ctrl_ip_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy.v
+END
+alt_mem_ddrx_burst_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_burst_gen.v
+END
+alt_mem_ddrx_ecc_encoder_64_syn.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_encoder_64_syn.v
+END
+alt_mem_ddrx_define.iv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_define.iv
+END
+altera_primitives.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/altera_primitives.v
+END
+220model.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/220model.v
+END
+alt_mem_ddrx_timing_param.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_timing_param.v
+END
+ddr_ctrl_ip_alt_mem_ddrx_controller_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_alt_mem_ddrx_controller_top.v
+END
+alt_mem_ddrx_controller_st_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_controller_st_top.v
+END
+alt_mem_ddrx_wdata_path.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_wdata_path.v
+END
+alt_mem_phy_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_phy_defines.v
+END
+alt_mem_ddrx_rdwr_data_tmg.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_rdwr_data_tmg.v
+END
+ddr_ctrl_ip_sim.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_sim.v
+END
+alt_mem_ddrx_odt_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_odt_gen.v
+END
+alt_mem_ddrx_dataid_manager.v
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_dataid_manager.v
+END
+alt_mem_ddrx_ecc_decoder_64_syn.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_decoder_64_syn.v
+END
+alt_mem_ddrx_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_controller.v
+END
+sgate.v
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/sgate.v
+END
+alt_mem_ddrx_ecc_encoder_32_syn.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_encoder_32_syn.v
+END
+alt_mem_ddrx_addr_cmd_wrap.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_addr_cmd_wrap.v
+END
+alt_mem_ddrx_csr.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_csr.v
+END
+alt_mem_ddrx_arbiter.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_arbiter.v
+END
+ddr_ctrl_ip_phy_alt_mem_phy_seq.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy_alt_mem_phy_seq.vhd
+END
+alt_mem_ddrx_ecc_encoder.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_encoder.v
+END
+ddr_ctrl_ip_controller_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_controller_phy.v
+END
+alt_mem_ddrx_ddr2_odt_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ddr2_odt_gen.v
+END
+alt_mem_ddrx_rank_timer.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_rank_timer.v
+END
+alt_mem_ddrx_ddr3_odt_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ddr3_odt_gen.v
+END
+ddr_ctrl_ip_phy_alt_mem_phy_seq_wrapper.vo
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy_alt_mem_phy_seq_wrapper.vo
+END
+alt_mem_ddrx_cmd_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_cmd_gen.v
+END
+alt_mem_ddrx_addr_cmd.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_addr_cmd.v
+END
+ddr_ctrl_ip_phy_sim.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy_sim.v
+END
+alt_mem_ddrx_buffer_manager.v
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_buffer_manager.v
+END
+alt_mem_ddrx_lpddr2_addr_cmd.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_lpddr2_addr_cmd.v
+END
+ddr_ctrl_ip_phy_alt_mem_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy_alt_mem_phy.v
+END
+alt_mem_ddrx_mm_st_converter.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_mm_st_converter.v
+END
+ddr_ctrl_ip.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip.v
+END
+alt_mem_ddrx_rdata_path.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_rdata_path.v
+END
+alt_mem_ddrx_buffer.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_buffer.v
+END
+alt_mem_ddrx_sideband.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_sideband.v
+END
+alt_mem_ddrx_list.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_list.v
+END
+altera_mf.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/altera_mf.v
+END
+cycloneiii_atoms.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/cycloneiii_atoms.v
+END
+ddr_ctrl_ip_phy_alt_mem_phy_pll.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy_alt_mem_phy_pll.v
+END
+alt_mem_ddrx_ecc_decoder_32_syn.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_decoder_32_syn.v
+END
+ddr_ctrl_ip_phy_alt_mem_phy_seq_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/ddr_ctrl_ip_phy_alt_mem_phy_seq_wrapper.v
+END
+alt_mem_ddrx_input_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_input_if.v
+END
+alt_mem_ddrx_ecc_encoder_decoder_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_encoder_decoder_wrapper.v
+END
+alt_mem_ddrx_ecc_decoder.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_ecc_decoder.v
+END
+alt_mem_ddrx_burst_tracking.v
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/backend/rtl/verilog/ddr_ctrl_ip/alt_mem_ddrx_burst_tracking.v
+END

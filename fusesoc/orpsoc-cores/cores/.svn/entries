@@ -1,0 +1,142 @@
+10
+
+dir
+121
+https://github.com/openrisc/orpsoc-cores/trunk/cores
+https://github.com/openrisc/orpsoc-cores
+
+
+
+2014-05-22T19:40:19.000000Z
+120
+franck.jullien
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1ea6d8a5-a690-ea7d-096b-ce57b7db7bff
+
+mor1kx
+dir
+
+csrbrg
+dir
+
+diila
+dir
+
+or1200
+dir
+
+mor1kx-dev-env
+dir
+
+altera_virtual_jtag
+dir
+
+cfi_ctrl
+dir
+
+jp_vpi
+dir
+
+jtag_tap
+dir
+
+wb_altera_ddr_wrapper
+dir
+
+mt46v16m16p
+dir
+
+dbg
+dir
+
+wb_bfm
+dir
+
+gpio
+dir
+
+vga_lcd
+dir
+
+minimac2
+dir
+
+ethmac
+dir
+
+ac97
+dir
+
+ps2
+dir
+
+ram_wb
+dir
+
+elf-loader
+dir
+
+vlog_tb_utils
+dir
+
+verilator_tb_utils
+dir
+
+uart16550
+dir
+
+i2c
+dir
+
+scalable_arbiter
+dir
+
+adv_debug_sys
+dir
+
+wb_sdram_ctrl
+dir
+
+wb_avalon_bridge
+dir
+
+wiredelay
+dir
+
+verilog_utils
+dir
+
+mt48lc16m16a2
+dir
+
+verilog-arbiter
+dir
+
+jtag_vpi
+dir
+
+simple_spi
+dir
+
+mmuart
+dir
+
+wb_ram
+dir
+
+wb_intercon
+dir
+

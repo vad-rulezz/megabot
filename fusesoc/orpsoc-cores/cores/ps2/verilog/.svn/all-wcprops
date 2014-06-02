@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/ps2/verilog
+END
+ps2.v
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/ps2/verilog/ps2.v
+END
+ps2_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/ps2/verilog/ps2_wb.v
+END

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/openrisc/orpsoc-cores/!svn/ver/109/trunk/systems/or1200-generic/bench/verilator
+END
+tb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/openrisc/orpsoc-cores/!svn/ver/109/trunk/systems/or1200-generic/bench/verilator/tb.cpp
+END

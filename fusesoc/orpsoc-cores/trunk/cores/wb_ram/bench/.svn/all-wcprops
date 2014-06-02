@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_ram/bench
+END
+wb_ram_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_ram/bench/wb_ram_tb.v
+END

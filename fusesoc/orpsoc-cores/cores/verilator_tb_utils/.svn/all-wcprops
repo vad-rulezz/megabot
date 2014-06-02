@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/openrisc/orpsoc-cores/!svn/ver/117/trunk/cores/verilator_tb_utils
+END
+verilator_tb_utils.core
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/openrisc/orpsoc-cores/!svn/ver/108/trunk/cores/verilator_tb_utils/verilator_tb_utils.core
+END
+jtagServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/openrisc/orpsoc-cores/!svn/ver/108/trunk/cores/verilator_tb_utils/jtagServer.cpp
+END
+verilator_tb_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/117/trunk/cores/verilator_tb_utils/verilator_tb_utils.cpp
+END
+jtagServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/openrisc/orpsoc-cores/!svn/ver/108/trunk/cores/verilator_tb_utils/jtagServer.h
+END
+verilator_tb_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/openrisc/orpsoc-cores/!svn/ver/108/trunk/cores/verilator_tb_utils/verilator_tb_utils.h
+END

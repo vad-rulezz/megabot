@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/openrisc/orpsoc-cores/!svn/ver/120/trunk/cores/wb_altera_ddr_wrapper
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/README.md
+END
+wb_altera_ddr_wrapper.core
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/wb_altera_ddr_wrapper/wb_altera_ddr_wrapper.core
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_ram/rtl/verilog
+END
+wb_ram_generic.v
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_ram/rtl/verilog/wb_ram_generic.v
+END
+wb_funcs.v
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_ram/rtl/verilog/wb_funcs.v
+END
+wb_ram.v
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_ram/rtl/verilog/wb_ram.v
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/data
+END
+de0_nano.sdc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/31/trunk/systems/de0_nano/data/de0_nano.sdc
+END
+options.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/openrisc/orpsoc-cores/!svn/ver/31/trunk/systems/de0_nano/data/options.tcl
+END
+wb_intercon.conf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/data/wb_intercon.conf
+END
+pinmap.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/data/pinmap.tcl
+END

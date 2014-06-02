@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/or1200/patches
+END
+0001-merge-display-arch-state-tasks.diff
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/or1200/patches/0001-merge-display-arch-state-tasks.diff
+END
+0000-add-or1200_monitor.diff
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/or1200/patches/0000-add-or1200_monitor.diff
+END

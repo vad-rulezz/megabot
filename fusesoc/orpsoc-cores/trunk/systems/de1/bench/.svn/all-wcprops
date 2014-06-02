@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/systems/de1/bench
+END
+orpsoc_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/systems/de1/bench/orpsoc_tb.v
+END
+uart_decoder.v
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/bench/uart_decoder.v
+END

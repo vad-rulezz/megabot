@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/systems/mor1kx-generic/bench/verilog/include
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/systems/mor1kx-generic/bench/verilog/include/timescale.v
+END
+uart_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/systems/mor1kx-generic/bench/verilog/include/uart_defines.v
+END
+test-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/systems/mor1kx-generic/bench/verilog/include/test-defines.v
+END

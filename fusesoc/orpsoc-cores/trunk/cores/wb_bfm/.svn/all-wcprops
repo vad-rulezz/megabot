@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_bfm
+END
+wb_bfm_transactor.v
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_bfm/wb_bfm_transactor.v
+END
+wb_bfm.core
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/openrisc/orpsoc-cores/!svn/ver/102/trunk/cores/wb_bfm/wb_bfm.core
+END
+wb_bfm_params.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/wb_bfm/wb_bfm_params.v
+END
+wb_bfm_common.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/wb_bfm/wb_bfm_common.v
+END
+wb_bfm_memory.v
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_bfm/wb_bfm_memory.v
+END
+wb_bfm_slave.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_bfm/wb_bfm_slave.v
+END
+wb_bfm_master.v
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/wb_bfm/wb_bfm_master.v
+END

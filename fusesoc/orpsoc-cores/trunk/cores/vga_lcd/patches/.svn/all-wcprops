@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/openrisc/orpsoc-cores/!svn/ver/46/trunk/cores/vga_lcd/patches
+END
+0001-fix-typo-in-wbm_busy-signal.patch
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/openrisc/orpsoc-cores/!svn/ver/46/trunk/cores/vga_lcd/patches/0001-fix-typo-in-wbm_busy-signal.patch
+END
+0002-autoresync-on-fifo-underruns.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/openrisc/orpsoc-cores/!svn/ver/46/trunk/cores/vga_lcd/patches/0002-autoresync-on-fifo-underruns.patch
+END

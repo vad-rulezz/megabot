@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/elf-loader
+END
+elf-loader.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/cores/elf-loader/elf-loader.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/cores/elf-loader/README
+END
+vpi_wrapper.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/76/trunk/cores/elf-loader/vpi_wrapper.c
+END
+elf-loader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/cores/elf-loader/elf-loader.h
+END
+elf-loader.core
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/openrisc/orpsoc-cores/!svn/ver/99/trunk/cores/elf-loader/elf-loader.core
+END

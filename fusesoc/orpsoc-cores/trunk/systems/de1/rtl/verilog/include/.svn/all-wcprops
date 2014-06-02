@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/rtl/verilog/include
+END
+uart_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/rtl/verilog/include/uart_defines.v
+END
+or1200_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/rtl/verilog/include/or1200_defines.v
+END
+orpsoc-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/rtl/verilog/include/orpsoc-defines.v
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/rtl/verilog/include/timescale.v
+END

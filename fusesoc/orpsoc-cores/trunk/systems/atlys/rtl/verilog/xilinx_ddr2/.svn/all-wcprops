@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2
+END
+infrastructure.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/infrastructure.v
+END
+iodrp_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/iodrp_controller.v
+END
+mcb_ui_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/mcb_ui_top.v
+END
+iodrp_mcb_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/iodrp_mcb_controller.v
+END
+memc_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/memc_wrapper.v
+END
+mcb_soft_calibration.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/mcb_soft_calibration.v
+END
+xilinx_ddr2_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/xilinx_ddr2_if.v
+END
+mcb_soft_calibration_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/mcb_soft_calibration_top.v
+END
+xilinx_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/xilinx_ddr2.v
+END
+ddr2_mig.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/ddr2_mig.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/README
+END
+mcb_raw_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/xilinx_ddr2/mcb_raw_wrapper.v
+END

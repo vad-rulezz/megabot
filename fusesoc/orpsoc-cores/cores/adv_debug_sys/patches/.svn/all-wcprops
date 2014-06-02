@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/44/trunk/cores/adv_debug_sys/patches
+END
+0000-Force-x-to-zero-in-adbg-crc32-during-sim.diff
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/openrisc/orpsoc-cores/!svn/ver/44/trunk/cores/adv_debug_sys/patches/0000-Force-x-to-zero-in-adbg-crc32-during-sim.diff
+END

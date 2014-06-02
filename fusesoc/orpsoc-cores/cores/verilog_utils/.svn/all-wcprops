@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/openrisc/orpsoc-cores/!svn/ver/85/trunk/cores/verilog_utils
+END
+verilog_utils.core
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/openrisc/orpsoc-cores/!svn/ver/85/trunk/cores/verilog_utils/verilog_utils.core
+END
+verilog_utils.vh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/openrisc/orpsoc-cores/!svn/ver/85/trunk/cores/verilog_utils/verilog_utils.vh
+END

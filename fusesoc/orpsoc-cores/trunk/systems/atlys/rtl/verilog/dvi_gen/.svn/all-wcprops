@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/113/trunk/systems/atlys/rtl/verilog/dvi_gen
+END
+convert_30to15_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/convert_30to15_fifo.v
+END
+dcmspi.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/dcmspi.v
+END
+DRAM16XN.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/DRAM16XN.v
+END
+dvi_encoder.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/dvi_encoder.v
+END
+serdes_n_to_1.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/serdes_n_to_1.v
+END
+synchro.v
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/synchro.v
+END
+dvi_gen_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/113/trunk/systems/atlys/rtl/verilog/dvi_gen/dvi_gen_top.v
+END
+encode.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/dvi_gen/encode.v
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/systems/de1
+END
+de1.system
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/openrisc/orpsoc-cores/!svn/ver/72/trunk/systems/de1/de1.system
+END
+de1.core
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/systems/de1/de1.core
+END

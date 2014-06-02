@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/include
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/include/timescale.v
+END
+uart_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/include/uart_defines.v
+END
+xilinx_ddr2_params.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/include/xilinx_ddr2_params.v
+END
+orpsoc-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/rtl/verilog/include/orpsoc-defines.v
+END

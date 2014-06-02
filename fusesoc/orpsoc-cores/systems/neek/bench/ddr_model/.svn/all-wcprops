@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/bench/ddr_model
+END
+ddr_parameters.vh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/bench/ddr_model/ddr_parameters.vh
+END
+ddr.v
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/bench/ddr_model/ddr.v
+END

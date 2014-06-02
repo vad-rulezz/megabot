@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/bin
+END
+neek.sof
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/bin/neek.sof
+END
+README.flash
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/bin/README.flash
+END
+neek.flash
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/bin/neek.flash
+END
+flash_img.sof
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/bin/flash_img.sof
+END

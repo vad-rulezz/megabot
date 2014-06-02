@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data
+END
+pinmap.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/pinmap.tcl
+END
+ddr_ctrl_ip_phy_ddr_pins.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/ddr_ctrl_ip_phy_ddr_pins.tcl
+END
+neek.sdc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/neek.sdc
+END
+options.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/options.tcl
+END
+ddr_ctrl_ip_phy_ddr_timing.sdc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/ddr_ctrl_ip_phy_ddr_timing.sdc
+END
+wb_intercon.conf
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/openrisc/orpsoc-cores/!svn/ver/121/trunk/systems/neek/data/wb_intercon.conf
+END

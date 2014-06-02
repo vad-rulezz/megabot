@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/openrisc/orpsoc-cores/!svn/ver/107/trunk/systems/or1200-generic/bench/verilog
+END
+wb_intercon.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/openrisc/orpsoc-cores/!svn/ver/107/trunk/systems/or1200-generic/bench/verilog/wb_intercon.v
+END
+orpsoc_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/openrisc/orpsoc-cores/!svn/ver/107/trunk/systems/or1200-generic/bench/verilog/orpsoc_tb.v
+END
+uart16550_model.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/systems/or1200-generic/bench/verilog/uart16550_model.v
+END
+wb_intercon.vh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/openrisc/orpsoc-cores/!svn/ver/107/trunk/systems/or1200-generic/bench/verilog/wb_intercon.vh
+END
+wb_uart_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/openrisc/orpsoc-cores/!svn/ver/69/trunk/systems/or1200-generic/bench/verilog/wb_uart_wrapper.v
+END
+orpsoc_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/107/trunk/systems/or1200-generic/bench/verilog/orpsoc_top.v
+END

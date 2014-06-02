@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/i2c/patches
+END
+0002-add-i2c-slave-support.patch
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/i2c/patches/0002-add-i2c-slave-support.patch
+END
+0001-remove-time-delay-annotations.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/i2c/patches/0001-remove-time-delay-annotations.patch
+END

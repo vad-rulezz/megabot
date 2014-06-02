@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/data
+END
+options.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/data/options.tcl
+END
+wb_intercon.conf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/data/wb_intercon.conf
+END
+de1.sdc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/data/de1.sdc
+END
+pinmap.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/49/trunk/systems/de1/data/pinmap.tcl
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/openrisc/orpsoc-cores/!svn/ver/50/trunk/cores/uart16550/patches
+END
+0000-remove-delay-assignments.diff
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/uart16550/patches/0000-remove-delay-assignments.diff
+END
+0001-fix-bit-widths.diff
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/uart16550/patches/0001-fix-bit-widths.diff
+END
+0006-fix-wb-slave-behavior.diff
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/openrisc/orpsoc-cores/!svn/ver/50/trunk/cores/uart16550/patches/0006-fix-wb-slave-behavior.diff
+END
+0002-add-missing-wires.diff
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/uart16550/patches/0002-add-missing-wires.diff
+END
+0005-disable-debug-output.diff
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/uart16550/patches/0005-disable-debug-output.diff
+END
+0003-prescaler-support.diff
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/uart16550/patches/0003-prescaler-support.diff
+END

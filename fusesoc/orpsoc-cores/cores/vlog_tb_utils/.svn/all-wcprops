@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/vlog_tb_utils
+END
+vlog_tb_utils.v
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/vlog_tb_utils/vlog_tb_utils.v
+END
+vlog_tb_utils.core
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/openrisc/orpsoc-cores/!svn/ver/2/trunk/cores/vlog_tb_utils/vlog_tb_utils.core
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/openrisc/orpsoc-cores/!svn/ver/89/trunk/cores/wb_intercon
+END
+wb_intercon.core
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/86/trunk/cores/wb_intercon/wb_intercon.core
+END
+wb_arbiter.v
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/88/trunk/cores/wb_intercon/wb_arbiter.v
+END
+wb_mux.v
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/openrisc/orpsoc-cores/!svn/ver/88/trunk/cores/wb_intercon/wb_mux.v
+END
+wb_data_resize.v
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_intercon/wb_data_resize.v
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/systems/de0_nano
+END
+de0_nano.system
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/systems/de0_nano/de0_nano.system
+END
+de0_nano.core
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/74/trunk/systems/de0_nano/de0_nano.core
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/openrisc/orpsoc-cores/!svn/ver/114/trunk/systems/atlys
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/README
+END
+atlys.system
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/atlys.system
+END
+atlys.core
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/openrisc/orpsoc-cores/!svn/ver/100/trunk/systems/atlys/atlys.core
+END

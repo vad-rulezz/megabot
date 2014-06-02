@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/openrisc/orpsoc-cores/!svn/ver/119/trunk/cores/cfi_ctrl/patches
+END
+0001-fix-16bits-access.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/openrisc/orpsoc-cores/!svn/ver/119/trunk/cores/cfi_ctrl/patches/0001-fix-16bits-access.patch
+END

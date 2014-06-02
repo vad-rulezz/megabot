@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_bfm/bench
+END
+wb_bfm_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_bfm/bench/wb_bfm_tb.v
+END
+wb_master.v
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/21/trunk/cores/wb_bfm/bench/wb_master.v
+END

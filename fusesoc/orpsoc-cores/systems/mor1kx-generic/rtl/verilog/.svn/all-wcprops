@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/openrisc/orpsoc-cores/!svn/ver/111/trunk/systems/mor1kx-generic/rtl/verilog
+END
+orpsoc_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/openrisc/orpsoc-cores/!svn/ver/111/trunk/systems/mor1kx-generic/rtl/verilog/orpsoc_top.v
+END
+wb_intercon.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/openrisc/orpsoc-cores/!svn/ver/111/trunk/systems/mor1kx-generic/rtl/verilog/wb_intercon.v
+END
+wb_intercon.vh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/openrisc/orpsoc-cores/!svn/ver/111/trunk/systems/mor1kx-generic/rtl/verilog/wb_intercon.vh
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches
+END
+0003-remove-unused-register.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches/0003-remove-unused-register.patch
+END
+0001-tidy-whitespace-and-comments.patch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches/0001-tidy-whitespace-and-comments.patch
+END
+0004-make-reset-logic-synchronous-active-high-as-wishbone.patch
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches/0004-make-reset-logic-synchronous-active-high-as-wishbone.patch
+END
+0002-remove-1-annotations.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches/0002-remove-1-annotations.patch
+END
+0006-add-default-to-prevent-latch-creation.patch
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches/0006-add-default-to-prevent-latch-creation.patch
+END
+0005-add-slave-select-logic.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/openrisc/orpsoc-cores/!svn/ver/65/trunk/cores/simple_spi/patches/0005-add-slave-select-logic.patch
+END

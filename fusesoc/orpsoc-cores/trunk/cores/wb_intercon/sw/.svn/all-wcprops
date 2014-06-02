@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/openrisc/orpsoc-cores/!svn/ver/89/trunk/cores/wb_intercon/sw
+END
+wb_intercon_gen
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/openrisc/orpsoc-cores/!svn/ver/89/trunk/cores/wb_intercon/sw/wb_intercon_gen
+END
+verilogwriter.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/openrisc/orpsoc-cores/!svn/ver/32/trunk/cores/wb_intercon/sw/verilogwriter.py
+END

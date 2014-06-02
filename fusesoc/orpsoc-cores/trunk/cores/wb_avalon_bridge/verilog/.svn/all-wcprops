@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/openrisc/orpsoc-cores/!svn/ver/50/trunk/cores/wb_avalon_bridge/verilog
+END
+avalon_to_wb_bridge.v
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/openrisc/orpsoc-cores/!svn/ver/46/trunk/cores/wb_avalon_bridge/verilog/avalon_to_wb_bridge.v
+END
+wb_to_avalon_bridge.v
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/openrisc/orpsoc-cores/!svn/ver/50/trunk/cores/wb_avalon_bridge/verilog/wb_to_avalon_bridge.v
+END
