@@ -19,36 +19,54 @@ module clkgen
 	// Wishbone clock and reset out
 	output wb_clk_o,
 	output wb_rst_o,
-	
-	// SDRAM clock and reset out
-	output sdram_clk_o,
-	output sdram_rst_o
 
+	// JTAG clock
+//	input  tck_pad_i,
+//	output dbg_tck_o,
+
+	// VGA CLK
+//	output dvi_clk_o,
+
+	// Main memory clocks
+	output ddr2_if_clk_o,
+	output ddr2_if_rst_o
+//	output clk100_o
 );
 
-wire async_rst_n;
 // First, deal with the asychronous reset
+wire	async_rst_n;
+
 assign async_rst_n = rst_n_pad_i;
 
 // Everyone likes active-high reset signals...
 assign async_rst_o = ~async_rst_n;
 
-
+//assign dbg_tck_o = tck_pad_i;
 
 //
 // Declare synchronous reset wires here
 //
 
+// An active-low synchronous reset signal (usually a PLL lock signal)
+wire	sync_wb_rst_n;
+wire	sync_ddr2_rst_n;
+
+// An active-low synchronous reset from ethernet PLL
+//wire	sync_eth_rst_n;
+
 
 wire	sys_clk_pad_ibufg;
-
-
-
 /* DCM0 wires */
 wire	dcm0_clk0_prebufg, dcm0_clk0;
+wire	dcm0_clk90_prebufg, dcm0_clk90;
+wire	dcm0_clkfx_prebufg, dcm0_clkfx;
 wire	dcm0_clkdv_prebufg, dcm0_clkdv;
+//wire	dcm0_clk2x_prebufg, dcm0_clk2x;
 wire	dcm0_locked;
 
+wire	pll0_clkfb;
+wire	pll0_locked;
+wire	pll0_clk1_prebufg, pll0_clk1;
 
 IBUFG sys_clk_in_ibufg (
 	.I	(sys_clk_pad_i),
@@ -58,50 +76,78 @@ IBUFG sys_clk_in_ibufg (
 
 // DCM providing main system/Wishbone clock
 DCM_SP #(
+	// Generate 200 MHz from CLKFX
 	.CLKFX_MULTIPLY	(4),
 	.CLKFX_DIVIDE	(1),
-	.CLKDV_DIVIDE	(2.0),
-	.CLKIN_DIVIDE_BY_2("FALSE"),
-//	.CLKIN_PERIOD(20.0),
-	.CLKOUT_PHASE_SHIFT("NONE"),
-	.CLK_FEEDBACK("1X"),
-	.DESKEW_ADJUST("SYSTEM_SYNCHRONOUS"),
-	.DLL_FREQUENCY_MODE("LOW"),
-	.DUTY_CYCLE_CORRECTION("TRUE"),
-	.PHASE_SHIFT(0),
-	.STARTUP_WAIT("FALSE")
-	
+	.CLKIN_PERIOD (20.0),
+	// Generate 25 MHz from CLKDV
+	.CLKDV_DIVIDE	(2.0)
 ) dcm0 (
 	// Outputs
 	.CLK0		(dcm0_clk0_prebufg),
 	.CLK180		(),
 	.CLK270		(),
 	.CLK2X180	(),
-	.CLK2X		(),
-	.CLK90		(),
-	.CLKDV		(dcm0_clkdv_prebufg),
-	.CLKFX180	(),
-	.CLKFX		(),
+	.CLK2X		(),//dcm0_clk2x_prebufg),
+	.CLK90		(),//dcm0_clk90_prebufg),
+	.CLKDV		(),//dcm0_clkdv_prebufg),
+	.CLKFX180	(),//dcm0_clkfx_prebufg),
+	.CLKFX		(dcm0_clkfx_prebufg),
 	.LOCKED		(dcm0_locked),
-	.PSDONE		(),
-	.STATUS		(),
 	// Inputs
 	.CLKFB		(dcm0_clk0),
 	.CLKIN		(sys_clk_pad_ibufg),
-	.PSCLK		(1'b0),
 	.PSEN		(1'b0),
-	.PSINCDEC	(1'b0),
 	.RST		(async_rst_o)
 );
 
-
+// Daisy chain DCM-PLL to reduce jitter
+PLL_BASE #(
+	.BANDWIDTH("OPTIMIZED"),
+	// .CLKFBOUT_MULT(8), // 80 MHz
+	.CLKFBOUT_MULT(8), // 50 MHz
+	.CLKFBOUT_PHASE(0.0),
+	.CLKIN_PERIOD(20),
+	.CLKOUT1_DIVIDE(16),
+	.CLKOUT2_DIVIDE(1),
+	.CLKOUT3_DIVIDE(1),
+	.CLKOUT4_DIVIDE(1),
+	.CLKOUT5_DIVIDE(1),
+	.CLKOUT1_DUTY_CYCLE(0.5),
+	.CLKOUT2_DUTY_CYCLE(0.5),
+	.CLKOUT3_DUTY_CYCLE(0.5),
+	.CLKOUT4_DUTY_CYCLE(0.5),
+	.CLKOUT5_DUTY_CYCLE(0.5),
+	.CLKOUT1_PHASE(0.0),
+	.CLKOUT2_PHASE(0.0),
+	.CLKOUT3_PHASE(0.0),
+	.CLKOUT4_PHASE(0.0),
+	.CLKOUT5_PHASE(0.0),
+	.CLK_FEEDBACK("CLKFBOUT"),
+	.COMPENSATION("DCM2PLL"),
+	.DIVCLK_DIVIDE(1),
+	.REF_JITTER(0.1),
+	.RESET_ON_LOSS_OF_LOCK("FALSE")
+) pll0 (
+	.CLKFBOUT	(pll0_clkfb),
+	.CLKOUT1	(pll0_clk1_prebufg),
+	.CLKOUT2	(),
+	.CLKOUT3	(CLKOUT3),
+	.CLKOUT4	(CLKOUT4),
+	.CLKOUT5	(CLKOUT5),
+	.LOCKED		(pll0_locked),
+	.CLKFBIN	(pll0_clkfb),
+	.CLKIN		(sys_clk_pad_ibufg),////dcm0_clk90_prebufg),
+	.RST		(async_rst_o)
+);
+/*
 BUFG dcm0_clk0_bufg
        (// Outputs
 	.O	(dcm0_clk0),
 	// Inputs
 	.I	(dcm0_clk0_prebufg)
 );
-/*
+
 BUFG dcm0_clk2x_bufg
        (// Outputs
 	.O	(dcm0_clk2x),
@@ -116,6 +162,7 @@ BUFG dcm0_clkfx_bufg
 	.I	(dcm0_clkfx_prebufg)
 );
 
+/* This is buffered in dvi_gen*/
 
 BUFG dcm0_clkdv_bufg
        (// Outputs
@@ -125,14 +172,20 @@ BUFG dcm0_clkdv_bufg
 );
 
 
-wire	sync_rst_n;
+BUFG pll0_clk1_bufg
+       (// Outputs
+	.O	(pll0_clk1),
+	// Inputs
+	.I	(pll0_clk1_prebufg));
 
+assign wb_clk_o = pll0_clk1;
+assign sync_wb_rst_n = pll0_locked;
+assign sync_ddr2_rst_n = dcm0_locked;
 
-assign wb_clk_o = dcm0_clkdv;
-assign sdram_clk_o = dcm0_clk0;
+assign ddr2_if_clk_o = dcm0_clkfx; // 200MHz
+//assign clk100_o = dcm0_clk0; // 100MHz
 
-assign sync_rst_n = dcm0_locked;
-
+//assign dvi_clk_o = dcm0_clkdv_prebufg;
 
 //
 // Reset generation
@@ -145,21 +198,10 @@ always @(posedge wb_clk_o or posedge async_rst_o)
 	if (async_rst_o)
 		wb_rst_shr <= 16'hffff;
 	else
-		wb_rst_shr <= {wb_rst_shr[14:0], ~(sync_rst_n)};
+		wb_rst_shr <= {wb_rst_shr[14:0], ~(sync_wb_rst_n)};
 
 assign wb_rst_o = wb_rst_shr[15];
 
-// Reset generation for SDRAM controller
-reg [15:0]	sdram_rst_shr;
-
-always @(posedge sdram_clk_o or posedge async_rst_o)
-    if (async_rst_o)
-	sdram_rst_shr <= 16'hffff;
-    else
-	sdram_rst_shr <= {sdram_rst_shr[14:0], ~(sync_rst_n)};
-
-assign sdram_rst_o = sdram_rst_shr[15];
-
-
+assign ddr2_if_rst_o = async_rst_o;
 
 endmodule // clkgen

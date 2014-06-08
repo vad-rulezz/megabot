@@ -34,6 +34,9 @@
 `include "orpsoc-defines.v"
 
 module orpsoc_top #(
+	parameter C3_NUM_DQ_PINS          = 16,
+	parameter C3_MEM_ADDR_WIDTH       = 13,
+	parameter C3_MEM_BANKADDR_WIDTH   = 2,
 	parameter	rom0_aw = 6,
 	parameter	uart0_aw = 3
 )(
@@ -46,18 +49,25 @@ module orpsoc_top #(
 	output		uart0_stx_pad_o,
 	
 	//SDRAM
-	output	[1:0]	sdram_ba_pad_o,
-	output	[12:0]	sdram_a_pad_o,
-	output		sdram_cs_n_pad_o,
-	output		sdram_ras_pad_o,
-	output		sdram_cas_pad_o,
-	output		sdram_we_pad_o,
-	inout	[15:0]	sdram_dq_pad_io,
-	output	[1:0]	sdram_dqm_pad_o,
-	output		sdram_cke_pad_o,
-	output		sdram_clk_pad_o
+	output [12:0]	ddr2_a,
+	output [2:0]	ddr2_ba,
+	output		ddr2_ras_n,
+	output		ddr2_cas_n,
+	output		ddr2_we_n,
+	output		ddr2_rzq,
+	output		ddr2_zio,
+	output		ddr2_odt,
+	output		ddr2_cke,
+	output		ddr2_dm,
+	output		ddr2_udm,
+	inout [15:0]	ddr2_dq,
+	inout		ddr2_dqs,
+	inout		ddr2_dqs_n,
+	inout		ddr2_udqs,
+	inout		ddr2_udqs_n,
+	output		ddr2_ck,
+	output		ddr2_ck_n
 	
-
 /*
 	// SPI
 	output		spi0_sck_o,
@@ -77,7 +87,7 @@ parameter	IDCODE_VALUE=32'h14951185;
 
 wire	async_rst;
 wire	wb_clk, wb_rst;
-wire	sdram_clk, sdram_rst;
+wire	ddr2_if_clk, ddr2_if_rst;
 
 
 clkgen clkgen0 (
@@ -86,8 +96,8 @@ clkgen clkgen0 (
 	.async_rst_o	(async_rst),
 	.wb_clk_o	(wb_clk),
 	.wb_rst_o	(wb_rst),
-	.sdram_clk_o	(sdram_clk),
-	.sdram_rst_o	(sdram_rst)
+	.ddr2_if_clk_o	(ddr2_if_clk),
+	.ddr2_if_rst_o	(ddr2_if_rst)
 );
 
 ////////////////////////////////////////////////////////////////////////
@@ -318,66 +328,127 @@ assign	wb_s2m_rom0_ack_o = 0;
 // SDRAM Memory Controller
 //
 ////////////////////////////////////////////////////////////////////////
+xilinx_ddr2 xilinx_ddr2_0 (
+/*	.wbm0_adr_i	(wb_m2s_ddr2_eth0_adr),
+	.wbm0_bte_i	(wb_m2s_ddr2_eth0_bte),
+	.wbm0_cti_i	(wb_m2s_ddr2_eth0_cti),
+	.wbm0_cyc_i	(wb_m2s_ddr2_eth0_cyc),
+	.wbm0_dat_i	(wb_m2s_ddr2_eth0_dat),
+	.wbm0_sel_i	(wb_m2s_ddr2_eth0_sel),
+	.wbm0_stb_i	(wb_m2s_ddr2_eth0_stb),
+	.wbm0_we_i	(wb_m2s_ddr2_eth0_we),
+	.wbm0_ack_o	(wb_s2m_ddr2_eth0_ack),
+	.wbm0_err_o	(wb_s2m_ddr2_eth0_err),
+	.wbm0_rty_o	(wb_s2m_ddr2_eth0_rty),
+	.wbm0_dat_o	(wb_s2m_ddr2_eth0_dat),
+*/
+	.wbm0_adr_i	(wb_m2s_mem32_dbus_adr),
+	.wbm0_bte_i	(wb_m2s_mem32_dbus_bte),
+	.wbm0_cti_i	(wb_m2s_mem32_dbus_cti),
+	.wbm0_cyc_i	(wb_m2s_mem32_dbus_cyc),
+	.wbm0_dat_i	(wb_m2s_mem32_dbus_dat),
+	.wbm0_sel_i	(wb_m2s_mem32_dbus_sel),
+	.wbm0_stb_i	(wb_m2s_mem32_dbus_stb),
+	.wbm0_we_i	(wb_m2s_mem32_dbus_we),
+	.wbm0_ack_o	(wb_s2m_mem32_dbus_ack),
+	.wbm0_err_o	(wb_s2m_mem32_dbus_err),
+	.wbm0_rty_o	(wb_s2m_mem32_dbus_rty),
+	.wbm0_dat_o	(wb_s2m_mem32_dbus_dat),
 
-wire	[15:0]	sdram_dq_i;
-wire	[15:0]	sdram_dq_o;
-wire		sdram_dq_oe;
+	.wbm1_adr_i	(wb_m2s_mem32_ibus_adr),
+	.wbm1_bte_i	(wb_m2s_mem32_ibus_bte),
+	.wbm1_cti_i	(wb_m2s_mem32_ibus_cti),
+	.wbm1_cyc_i	(wb_m2s_mem32_ibus_cyc),
+	.wbm1_dat_i	(wb_m2s_mem32_ibus_dat),
+	.wbm1_sel_i	(wb_m2s_mem32_ibus_sel),
+	.wbm1_stb_i	(wb_m2s_mem32_ibus_stb),
+	.wbm1_we_i	(wb_m2s_mem32_ibus_we),
+	.wbm1_ack_o	(wb_s2m_mem32_ibus_ack),
+	.wbm1_err_o	(wb_s2m_mem32_ibus_err),
+	.wbm1_rty_o	(wb_s2m_mem32_ibus_rty),
+	.wbm1_dat_o	(wb_s2m_mem32_ibus_dat),
 
-assign	sdram_dq_i = sdram_dq_pad_io;
-assign	sdram_dq_pad_io = sdram_dq_oe ? sdram_dq_o : 16'bz;
-assign	sdram_clk_pad_o = sdram_clk;
+	.wbm2_adr_i	(0),
+	.wbm2_bte_i	(0),
+	.wbm2_cti_i	(0),
+	.wbm2_cyc_i	(0),
+	.wbm2_dat_i	(0),
+	.wbm2_sel_i	(0),
+	.wbm2_stb_i	(0),
+	.wbm2_we_i	(0),
+	.wbm2_ack_o	(),
+	.wbm2_err_o	(),
+	.wbm2_rty_o	(),
+	.wbm2_dat_o	(),
 
-assign	wb_s2m_sdram_ibus_err = 0;
-assign	wb_s2m_sdram_ibus_rty = 0;
 
-assign	wb_s2m_sdram_dbus_err = 0;
-assign	wb_s2m_sdram_dbus_rty = 0;
-wb_sdram_ctrl #(
 
-//    	.TECHNOLOGY		("XILINX"),
-	.CLK_FREQ_MHZ		(50),// sdram_clk freq in MHZ
-	.POWERUP_DELAY		(200),// power up delay in us
-	.WB_PORTS		(2),// Number of wishbone ports
-	.ROW_WIDTH		(15),// Row width
-	.COL_WIDTH		(9),// Column width
-	.BA_WIDTH		(2),// Ba width
-	.tCAC			(2),// CAS Latency
-	.tRAC			(5),// RAS Latency
-	.tRP			(2),// Command Period (PRE to ACT)
-	.tRC			(7),// Command Period (REF to REF /
-	.tMRD			(2)// Mode Register Set To Command
-)
+	.wbm3_adr_i	(0),
+	.wbm3_bte_i	(0),
+	.wbm3_cti_i	(0),
+	.wbm3_cyc_i	(0),
+	.wbm3_dat_i	(0),
+	.wbm3_sel_i	(0),
+	.wbm3_stb_i	(0),
+	.wbm3_we_i	(0),
+	.wbm3_ack_o	(),
+	.wbm3_err_o	(),
+	.wbm3_rty_o	(),
+	.wbm3_dat_o	(),
 
-wb_sdram_ctrl0 (
-// External SDRAM interface
-.ba_pad_o	(sdram_ba_pad_o[1:0]),
-.a_pad_o	(sdram_a_pad_o[12:0]),
-.cs_n_pad_o	(sdram_cs_n_pad_o),
-.ras_pad_o	(sdram_ras_pad_o),
-.cas_pad_o	(sdram_cas_pad_o),
-.we_pad_o	(sdram_we_pad_o),
-.dq_i		(sdram_dq_i[15:0]),
-.dq_o		(sdram_dq_o[15:0]),
-.dqm_pad_o	(sdram_dqm_pad_o[1:0]),
-.dq_oe		(sdram_dq_oe),
-.cke_pad_o	(sdram_cke_pad_o),
-.sdram_clk	(sdram_clk),
-.sdram_rst	(sdram_rst),
+	.wbm4_adr_i	(0),
+	.wbm4_bte_i	(0),
+	.wbm4_cti_i	(0),
+	.wbm4_cyc_i	(0),
+	.wbm4_dat_i	(0),
+	.wbm4_sel_i	(0),
+	.wbm4_stb_i	(0),
+	.wbm4_we_i	(0),
+	.wbm4_ack_o	(),
+	.wbm4_err_o	(),
+	.wbm4_rty_o	(),
+	.wbm4_dat_o	(),
 
-.wb_clk		(wb_clk),
-.wb_rst		(wb_rst),
+	.wbm5_adr_i	(0),
+	.wbm5_bte_i	(0),
+	.wbm5_cti_i	(0),
+	.wbm5_cyc_i	(0),
+	.wbm5_dat_i	(0),
+	.wbm5_sel_i	(0),
+	.wbm5_stb_i	(0),
+	.wbm5_we_i	(0),
+	.wbm5_ack_o	(),
+	.wbm5_err_o	(),
+	.wbm5_rty_o	(),
+	.wbm5_dat_o	(),
+	
+	.wb_clk		(wb_clk),
+	.wb_rst		(wb_rst),
 
-.wb_adr_i	({wb_m2s_sdram_ibus_adr, wb_m2s_sdram_dbus_adr}),
-.wb_stb_i	({wb_m2s_sdram_ibus_stb, wb_m2s_sdram_dbus_stb}),
-.wb_cyc_i	({wb_m2s_sdram_ibus_cyc, wb_m2s_sdram_dbus_cyc}),
-.wb_cti_i	({wb_m2s_sdram_ibus_cti, wb_m2s_sdram_dbus_cti}),
-.wb_bte_i	({wb_m2s_sdram_ibus_bte, wb_m2s_sdram_dbus_bte}),
-.wb_we_i	({wb_m2s_sdram_ibus_we,  wb_m2s_sdram_dbus_we }),
-.wb_sel_i	({wb_m2s_sdram_ibus_sel, wb_m2s_sdram_dbus_sel}),
-.wb_dat_i	({wb_m2s_sdram_ibus_dat, wb_m2s_sdram_dbus_dat}),
-.wb_dat_o	({wb_s2m_sdram_ibus_dat, wb_s2m_sdram_dbus_dat}),
-.wb_ack_o	({wb_s2m_sdram_ibus_ack, wb_s2m_sdram_dbus_ack})
+	.ddr2_a		(ddr2_a[12:0]),
+	.ddr2_ba	(ddr2_ba),
+	.ddr2_ras_n	(ddr2_ras_n),
+	.ddr2_cas_n	(ddr2_cas_n),
+	.ddr2_we_n	(ddr2_we_n),
+	.ddr2_rzq	(ddr2_rzq),
+//	.ddr2_zio	(ddr2_zio),
+//	.ddr2_odt	(ddr2_odt),
+	.ddr2_cke	(ddr2_cke),
+	.ddr2_dm	(ddr2_dm),
+	.ddr2_udm	(ddr2_udm),
+	.ddr2_ck	(ddr2_ck),
+	.ddr2_ck_n	(ddr2_ck_n),
+	.ddr2_dq	(ddr2_dq),
+	.ddr2_dqs	(ddr2_dqs),
+//	.ddr2_dqs_n	(ddr2_dqs_n),
+	.ddr2_udqs	(ddr2_udqs),
+//	.ddr2_udqs_n	(ddr2_udqs_n),
+	.ddr2_if_clk	(ddr2_if_clk),
+	.ddr2_if_rst	(ddr2_if_rst)
 );
+
+
+
 
 
 

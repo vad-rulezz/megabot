@@ -181,7 +181,7 @@
 //
 // Reset active low
 //
-//`define OR1200_RST_ACT_LOW
+`define OR1200_RST_ACT_LOW
 
 //
 // Enable RAM BIST
@@ -436,7 +436,7 @@
 // clmode to set ratio
 //
 `define OR1200_CLKDIV_2_SUPPORTED
-`define OR1200_CLKDIV_4_SUPPORTED
+//`define OR1200_CLKDIV_4_SUPPORTED
 
 //
 // Type of register file RAM
