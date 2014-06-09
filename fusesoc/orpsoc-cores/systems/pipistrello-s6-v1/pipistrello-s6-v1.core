@@ -11,8 +11,8 @@ depend =
  wb_sdram_ctrl
 
 
-simulators =
- icarus
+;simulators =
+; icarus
 
 
 [verilog]
@@ -21,14 +21,26 @@ src_files =
  rtl/verilog/clkgen.v
  rtl/verilog/rom.v
  rtl/verilog/wb_intercon.v
+ rtl/verilog/xilinx_lpddr/xilinx_ddr2_if.v
+ rtl/verilog/xilinx_lpddr/xilinx_ddr2.v
+ rtl/verilog/xilinx_lpddr/mem32.v
+ rtl/verilog/xilinx_lpddr/infrastructure.v
+ rtl/verilog/xilinx_lpddr/memc_wrapper.v
+ rtl/verilog/xilinx_lpddr/mcb_controller/iodrp_controller.v
+ rtl/verilog/xilinx_lpddr/mcb_controller/iodrp_mcb_controller.v
+ rtl/verilog/xilinx_lpddr/mcb_controller/mcb_raw_wrapper.v
+ rtl/verilog/xilinx_lpddr/mcb_controller/mcb_soft_calibration.v
+ rtl/verilog/xilinx_lpddr/mcb_controller/mcb_soft_calibration_top.v
+ rtl/verilog/xilinx_lpddr/mcb_controller/mcb_ui_top.v
 
 include_files =
  rtl/verilog/include/orpsoc-defines.v
+ rtl/verilog/include/xilinx_ddr2_params.v
  rtl/verilog/include/or1200_defines.v
  rtl/verilog/include/timescale.v
  rtl/verilog/include/uart_defines.v
  rtl/verilog/wb_intercon.vh
 
-[icarus]
-iverilog_options = -DICARUS_SIM -DSIM
+;[icarus]
+;iverilog_options = -DICARUS_SIM -DSIM
 
