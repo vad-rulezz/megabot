@@ -181,7 +181,7 @@
 //
 // Reset active low
 //
-`define OR1200_RST_ACT_LOW
+//`define OR1200_RST_ACT_LOW
 
 //
 // Enable RAM BIST

@@ -142,7 +142,7 @@ NET  "ddr2_we_n"                            LOC = "E3" ;
 #a 2R resistor should be connected between RZQand ground, where R is the desired#
 #input termination value.  Otherwise, RZQ should be left as a no-connect (NC) pin.#
 ##################################################################################
-#NET  "ddr2_rzq"                                  LOC = "N4" ;
+NET  "ddr2_rzq"                                  LOC = "N4" ;
 
 
 #PIN "clkgen0/dcm0_clk0_bufg.O" CLOCK_DEDICATED_ROUTE = FALSE;

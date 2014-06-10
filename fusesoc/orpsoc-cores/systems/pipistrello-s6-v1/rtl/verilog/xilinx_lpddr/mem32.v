@@ -179,7 +179,7 @@ module mem32 #
 // port-5 in Config-4: Two 64-bit bi-directional ports. Please look into the 
 // Chapter-2 of ug388.pdf in the /docs directory for further details.
    localparam C3_PORT_ENABLE              = 6'b000011;
-   localparam C3_PORT_CONFIG             = "B32_B32_R32_R32_W32_R32"; //"B32_B32_R32_R32_R32_R32";
+   localparam C3_PORT_CONFIG             = "B32_B32_R32_R32_R32_R32";
    localparam C3_P0_PORT_MODE             =  "BI_MODE";
    localparam C3_P1_PORT_MODE             =  "BI_MODE";
    localparam C3_P2_PORT_MODE             =  "NONE";

@@ -53,23 +53,27 @@ module rom
      if (wb_rst)
        wb_dat_o <= 32'h15000000;
      else
-       case (adr)
-	 // Zero r0 and endless loop
+        `ifdef (b3_burst)
+    	     case (adr)
+    	`else
+    	    case(wb_adr_i)
+    	`endif     
+/*	 // Zero r0 and endless loop
 	 0 : wb_dat_o <= 32'h18000000;
 	 1 : wb_dat_o <= 32'hA8200000;
 	 2 : wb_dat_o <= 32'hA8C00100;
 	 3 : wb_dat_o <= 32'h00000000;
 	 4 : wb_dat_o <= 32'h15000000;
-/*
+*/
 	 // Zero r0 and jump to 0x00000100
 	 0 : wb_dat_o <= 32'h18000000;
 	 1 : wb_dat_o <= 32'hA8200000;
 	 2 : wb_dat_o <= 32'hA8C00100;
 	 3 : wb_dat_o <= 32'h44003000;
 	 4 : wb_dat_o <= 32'h15000000;
- */
+ 
 	 default:
-	   wb_dat_o <= 32'h00000000;
+	    wb_dat_o <= 32'h00000000;
        endcase // case (wb_adr_i)
 
 generate

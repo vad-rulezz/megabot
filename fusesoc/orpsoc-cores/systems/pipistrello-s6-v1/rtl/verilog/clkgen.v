@@ -4,7 +4,7 @@
  *
  * Implements clock generation according to design defines
  *
- */
+` */
 `include "orpsoc-defines.v"
 
 module clkgen
@@ -36,10 +36,12 @@ module clkgen
 // First, deal with the asychronous reset
 wire	async_rst_n;
 
-assign async_rst_n = rst_n_pad_i;
+assign async_rst_n = ~rst_n_pad_i;//rst_n_pad_i;
 
 // Everyone likes active-high reset signals...
-assign async_rst_o = ~async_rst_n;
+//assign async_rst_o = ~async_rst_n;
+reg rst_r;
+reg wb_rst_r;
 
 //assign dbg_tck_o = tck_pad_i;
 
@@ -48,7 +50,7 @@ assign async_rst_o = ~async_rst_n;
 //
 
 // An active-low synchronous reset signal (usually a PLL lock signal)
-wire	sync_wb_rst_n;
+//wire	sync_wb_rst_n;
 wire	sync_ddr2_rst_n;
 
 // An active-low synchronous reset from ethernet PLL
@@ -90,7 +92,7 @@ DCM_SP #(
 	.CLK2X180	(),
 	.CLK2X		(),//dcm0_clk2x_prebufg),
 	.CLK90		(),//dcm0_clk90_prebufg),
-	.CLKDV		(),//dcm0_clkdv_prebufg),
+	.CLKDV		(dcm0_clkdv_prebufg),
 	.CLKFX180	(),//dcm0_clkfx_prebufg),
 	.CLKFX		(dcm0_clkfx_prebufg),
 	.LOCKED		(dcm0_locked),
@@ -98,9 +100,9 @@ DCM_SP #(
 	.CLKFB		(dcm0_clk0),
 	.CLKIN		(sys_clk_pad_ibufg),
 	.PSEN		(1'b0),
-	.RST		(async_rst_o)
+	.RST		(1'b0)//async_rst_o)
 );
-
+/*
 // Daisy chain DCM-PLL to reduce jitter
 PLL_BASE #(
 	.BANDWIDTH("OPTIMIZED"),
@@ -140,14 +142,14 @@ PLL_BASE #(
 	.CLKIN		(sys_clk_pad_ibufg),////dcm0_clk90_prebufg),
 	.RST		(async_rst_o)
 );
-/*
+*/
 BUFG dcm0_clk0_bufg
        (// Outputs
 	.O	(dcm0_clk0),
 	// Inputs
 	.I	(dcm0_clk0_prebufg)
 );
-
+/*
 BUFG dcm0_clk2x_bufg
        (// Outputs
 	.O	(dcm0_clk2x),
@@ -171,15 +173,15 @@ BUFG dcm0_clkdv_bufg
 	.I	(dcm0_clkdv_prebufg)
 );
 
-
+/*
 BUFG pll0_clk1_bufg
        (// Outputs
 	.O	(pll0_clk1),
 	// Inputs
 	.I	(pll0_clk1_prebufg));
-
-assign wb_clk_o = pll0_clk1;
-assign sync_wb_rst_n = pll0_locked;
+*/
+assign wb_clk_o = dcm0_clkdv; //pll0_clk1;
+//assign sync_wb_rst_n = pll0_locked;
 assign sync_ddr2_rst_n = dcm0_locked;
 
 assign ddr2_if_clk_o = dcm0_clkfx; // 200MHz
@@ -191,9 +193,18 @@ assign ddr2_if_clk_o = dcm0_clkfx; // 200MHz
 // Reset generation
 //
 //
-
+always @(posedge wb_clk_o or negedge async_rst_n)
+    if (~async_rst_n)
+	rst_r <= 1'b1;
+    else
+        rst_r <= #1 1'b0;
+assign async_rst_o = rst_r;
+always @(posedge wb_clk_o)
+    wb_rst_r <= #1 async_rst_o;
+assign wb_rst_o = wb_rst_r;
+            
 // Reset generation for wishbone
-reg [15:0] 	   wb_rst_shr;
+/*reg [15:0] 	   wb_rst_shr;
 always @(posedge wb_clk_o or posedge async_rst_o)
 	if (async_rst_o)
 		wb_rst_shr <= 16'hffff;
@@ -201,7 +212,7 @@ always @(posedge wb_clk_o or posedge async_rst_o)
 		wb_rst_shr <= {wb_rst_shr[14:0], ~(sync_wb_rst_n)};
 
 assign wb_rst_o = wb_rst_shr[15];
-
+*/
 assign ddr2_if_rst_o = async_rst_o;
 
 endmodule // clkgen
