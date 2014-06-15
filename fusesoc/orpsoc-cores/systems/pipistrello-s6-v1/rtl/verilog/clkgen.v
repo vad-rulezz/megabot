@@ -66,9 +66,9 @@ wire	dcm0_clkdv_prebufg, dcm0_clkdv;
 //wire	dcm0_clk2x_prebufg, dcm0_clk2x;
 wire	dcm0_locked;
 
-wire	pll0_clkfb;
-wire	pll0_locked;
-wire	pll0_clk1_prebufg, pll0_clk1;
+//wire	pll0_clkfb;
+//wire	pll0_locked;
+//wire	pll0_clk1_prebufg, pll0_clk1;
 
 IBUFG sys_clk_in_ibufg (
 	.I	(sys_clk_pad_i),

@@ -32,6 +32,24 @@ src_files =
  rtl/verilog/xilinx_lpddr/mcb_controller/mcb_soft_calibration.v
  rtl/verilog/xilinx_lpddr/mcb_controller/mcb_soft_calibration_top.v
  rtl/verilog/xilinx_lpddr/mcb_controller/mcb_ui_top.v
+ rtl/verilog/sdc_controller/sd_defines.h
+ rtl/verilog/sdc_controller/sd_clock_divider.v
+ rtl/verilog/sdc_controller/sd_cmd_master.v
+ rtl/verilog/sdc_controller/sd_cmd_serial_host.v
+ rtl/verilog/sdc_controller/sd_controller_wb.v
+ rtl/verilog/sdc_controller/sd_crc_16.v
+ rtl/verilog/sdc_controller/sd_crc_7.v
+ rtl/verilog/sdc_controller/sd_data_master.v
+ rtl/verilog/sdc_controller/sd_data_serial_host.v
+ rtl/verilog/sdc_controller/sd_fifo_filler.v
+ rtl/verilog/sdc_controller/sd_data_xfer_trig.v
+ rtl/verilog/sdc_controller/monostable_domain_cross.v 
+ rtl/verilog/sdc_controller/generic_fifo_dc_gray.v
+ rtl/verilog/sdc_controller/generic_dpram.v
+ rtl/verilog/sdc_controller/edge_detect.v
+ rtl/verilog/sdc_controller/bistable_domain_cross.v
+ rtl/verilog/sdc_controller/sdc_controller.v
+ 
 
 include_files =
  rtl/verilog/include/orpsoc-defines.v
@@ -39,6 +57,7 @@ include_files =
  rtl/verilog/include/or1200_defines.v
  rtl/verilog/include/timescale.v
  rtl/verilog/include/uart_defines.v
+ rtl/verilog/include/sd_defines.v
  rtl/verilog/wb_intercon.vh
 
 ;[icarus]

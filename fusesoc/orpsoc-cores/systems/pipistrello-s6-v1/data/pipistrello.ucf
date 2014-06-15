@@ -5,72 +5,47 @@ NET "rst_n_pad_i"      LOC = "N14"  | IOSTANDARD = LVTTL | PULLDOWN ;
 NET "rst_n_pad_i"      TIG;
 
 
-############################################################################
+# SD-card SDIO interface
+NET "sdc_dat_pad_io<0>" LOC = "B4" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+NET "sdc_dat_pad_io<1>" LOC = "A4" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+NET "sdc_dat_pad_io<2>" LOC = "B2" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+NET "sdc_dat_pad_io<3>" LOC = "A2" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+NET "sdc_cmd_pad_io" LOC = "B3" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+NET "sdc_clk_pad_o" LOC = "A3" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 ;
+
+# SD-card SPI interface
+#NET "SD_MISO" LOC = "B4" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+#NET "SD_CS" LOC = "A2" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+#NET "SD_MOSI" LOC = "B3" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 | PULLUP ;
+#NET "SD_SCK" LOC = "A3" | IOSTANDARD = SDIO | SLEW = FAST | DRIVE = 8 ;
+
+
+
 # SDRAM
-############################################################################
-############################################################################
 # VCC AUX VOLTAGE.
-############################################################################
+
 CONFIG VCCAUX=2.5; # Valid values are 2.5 and 3.3
 
-############################################################################
-# DDR2 requires the MCB to operate in Extended performance mode with higher Vccint
-# specification to achieve maximum frequency. Therefore, the following CONFIG constraint
-# follows the corresponding GUI option setting. However, DDR3 can operate at higher.
-# frequencies with any Vcciint value by operating MCB in extended mode. Please do not
-# remove/edit the below constraint to avoid false errors.
-############################################################################
 CONFIG MCB_PERFORMANCE= STANDARD;
 
-
-##################################################################################
 # Timing Ignore constraints for paths crossing the clock domain.
-##################################################################################
 NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/selfrefresh_mcb_mode" TIG;
 NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/c?_pll_lock" TIG;
-#INST "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL" TIG;
 
-
-#Please uncomment the below TIG if used in a design which enables self-refresh mode
-#NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MCB_REQ" TIG;
-
-############################################################################
-## Memory Controller 3...............................
+## Memory Controller 3
 ## Memory Device: LPDDR->MT46H32M16XXXX-5.
 ## Frequency: 200 MHz
 ## Time Period: 5000 ps
 ## Supported Part Numbers: MT46H32M16LFBF-5
-############################################################################
 
-############################################################################<-->
-# All the IO resources in an IO tile which contains DQSP/UDQSP are used><------>
-# irrespective of a single-ended or differential DQS design. Any signal that<-->
-# is connected to the free pin of the same IO tile in a single-ended design<--->
-# will be unrouted. Hence, the IOB cannot used as general pupose IO.<--><------><------>
-############################################################################<-->
 CONFIG PROHIBIT = P1,L3;
 
-############################################################################
-## Clock constraints........................................................
-############################################################################
-#NET "memc3_infrastructure_inst/sys_clk_ibufg" TNM_NET = "SYS_CLK3";
-#TIMESPEC "TS_SYS_CLK3" = PERIOD "SYS_CLK3"  5  ns HIGH 50 %;
-#NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/selfrefresh_mcb_mode" TIG;
-#NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/c?_pll_lock" TIG;
-
-#INST "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL*" TIG;
-#NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MCB_REQ" TIG;
+## Clock constraints
 
 NET "xilinx_ddr2_0/xilinx_ddr2_if0/mem32/memc3_infrastructure_inst/sys_clk_ibufg" TNM_NET = "SYS_CLK3";
 TIMESPEC "TS_SYS_CLK3" = PERIOD "SYS_CLK3"  5  ns HIGH 50 %;
 
-
-############################################################################
-
-############################################################################
 # I/O STANDARDS.
-############################################################################
-
 NET  "ddr2_dq[*]"                               IOSTANDARD = MOBILE_DDR | SLEW = FAST | DRIVE = 8; 
 NET  "ddr2_a[*]"                                IOSTANDARD = MOBILE_DDR | SLEW = FAST | DRIVE = 8 ;
 NET  "ddr2_ba[*]"                               IOSTANDARD = MOBILE_DDR | SLEW = FAST | DRIVE = 8;
@@ -87,10 +62,8 @@ NET  "ddr2_udm"                                 IOSTANDARD = MOBILE_DDR | SLEW =
 NET  "ddr2_rzq"                                      IOSTANDARD = MOBILE_DDR | SLEW = FAST | DRIVE = 8;
 #NET  "c3_sys_clk"                                  IOSTANDARD = LVCMOS25 ;
 #NET  "c3_sys_rst_i"                                IOSTANDARD = LVCMOS18 ;
-############################################################################
+
 # MCB 3
-# Pin Location Constraints for Clock, Masks, Address, and Controls
-############################################################################
 NET  "ddr2_a[0]"                            LOC = "J7" ;
 NET  "ddr2_a[10]"                           LOC = "F4" ;
 NET  "ddr2_a[11]"                           LOC = "D3" ;
@@ -135,17 +108,9 @@ NET  "ddr2_udm"                             LOC = "K4" ;
 NET  "ddr2_udqs"                            LOC = "P2" ;
 NET  "ddr2_we_n"                            LOC = "E3" ;
 
-##################################################################################
-#RZQ is required for all MCB designs.   Do not move the location #
-#of this pin for ES devices.For production devices, RZQ can be moved to any #
-#valid package pin within the MCB bank.For designs using Calibrated Input Termination, #
-#a 2R resistor should be connected between RZQand ground, where R is the desired#
-#input termination value.  Otherwise, RZQ should be left as a no-connect (NC) pin.#
-##################################################################################
-NET  "ddr2_rzq"                                  LOC = "N4" ;
+NET  "ddr2_rzq"                             LOC = "N4" ;
 
 
-#PIN "clkgen0/dcm0_clk0_bufg.O" CLOCK_DEDICATED_ROUTE = FALSE;
 # Constraints
 NET "sys_clk_pad_i" TNM_NET = "sys_clk_pad_i";
 TIMESPEC TS_sys_clk_pad_i = PERIOD "sys_clk_pad_i" 50 MHz HIGH 50 %;
