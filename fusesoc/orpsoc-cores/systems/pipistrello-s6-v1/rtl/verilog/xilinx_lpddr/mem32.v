@@ -168,7 +168,32 @@ module mem32 #
       output		c3_p1_rd_empty,
       output [6:0]	c3_p1_rd_count,
       output		c3_p1_rd_overflow,
-      output		c3_p1_rd_error
+      output		c3_p1_rd_error,
+      input		c3_p2_cmd_clk,
+      input		c3_p2_cmd_en,
+      input [2:0]	c3_p2_cmd_instr,
+      input [5:0]	c3_p2_cmd_bl,
+      input [29:0]	c3_p2_cmd_byte_addr,
+      output		c3_p2_cmd_empty,
+      output		c3_p2_cmd_full,
+//      input		c3_p2_wr_clk,
+//      input		c3_p2_wr_en,
+//      input [C3_P0_MASK_SIZE - 1:0]	c3_p2_wr_mask,
+//      input [C3_P0_DATA_PORT_SIZE - 1:0]	c3_p2_wr_data,
+//      output		c3_p2_wr_full,
+//      output		c3_p2_wr_empty,
+//      output [6:0]	c3_p2_wr_count,
+//      output		c3_p2_wr_underrun,
+//      output		c3_p2_wr_error,
+      input		c3_p2_rd_clk,
+      input		c3_p2_rd_en,
+      output [C3_P0_DATA_PORT_SIZE - 1:0]	c3_p2_rd_data,
+      output		c3_p2_rd_full,
+      output		c3_p2_rd_empty,
+      output [6:0]	c3_p2_rd_count,
+      output		c3_p2_rd_overflow,
+      output		c3_p2_rd_error
+ 
 );
 // The parameter CX_PORT_ENABLE shows all the active user ports in the design.
 // For example, the value 6'b111100 tells that only port-2, port-3, port-4
@@ -178,14 +203,14 @@ module mem32 #
 // Config-2: Four 32-bit bi-directional ports and the ports port-2 through
 // port-5 in Config-4: Two 64-bit bi-directional ports. Please look into the 
 // Chapter-2 of ug388.pdf in the /docs directory for further details.
-   localparam C3_PORT_ENABLE              = 6'b000011;
+   localparam C3_PORT_ENABLE              = 6'b000111;
    localparam C3_PORT_CONFIG             = "B32_B32_R32_R32_R32_R32";
-   localparam C3_P0_PORT_MODE             =  "BI_MODE";
-   localparam C3_P1_PORT_MODE             =  "BI_MODE";
-   localparam C3_P2_PORT_MODE             =  "NONE";
-   localparam C3_P3_PORT_MODE             =  "NONE";
-   localparam C3_P4_PORT_MODE             =  "NONE";
-   localparam C3_P5_PORT_MODE             =  "NONE";
+//   localparam C3_P0_PORT_MODE             =  "BI_MODE";
+//   localparam C3_P1_PORT_MODE             =  "BI_MODE";
+//   localparam C3_P2_PORT_MODE             =  "NONE";
+//   localparam C3_P3_PORT_MODE             =  "NONE";
+//   localparam C3_P4_PORT_MODE             =  "NONE";
+//   localparam C3_P5_PORT_MODE             =  "NONE";
                      
    localparam C3_CLKOUT0_DIVIDE       = 1;///2;       
    localparam C3_CLKOUT1_DIVIDE       = 1;//2;       
@@ -292,13 +317,13 @@ module mem32 #
   wire  [2:0]                     c3_vio_data_mode_value;
   wire  [2:0]                     c3_vio_addr_mode_value;
   wire  [31:0]                     c3_cmp_data;
-  wire                             c3_p2_cmd_clk;
+/*  wire                             c3_p2_cmd_clk;
   wire                             c3_p2_cmd_en;
   wire[2:0]                          c3_p2_cmd_instr;
   wire[5:0]			c3_p2_cmd_bl;
   wire[29:0]			c3_p2_cmd_byte_addr;
   wire				c3_p2_cmd_empty;
-  wire				c3_p2_cmd_full;
+  wire				c3_p2_cmd_full;*/
   wire				c3_p2_wr_clk;
   wire				c3_p2_wr_en;
   wire[3:0]			c3_p2_wr_mask;
@@ -308,14 +333,14 @@ module mem32 #
   wire[6:0]			c3_p2_wr_count;
   wire				c3_p2_wr_underrun;
   wire				c3_p2_wr_error;
-  wire				c3_p2_rd_clk;
+/*  wire				c3_p2_rd_clk;
   wire				c3_p2_rd_en;
   wire[31:0]			c3_p2_rd_data;
   wire				c3_p2_rd_full;
   wire				c3_p2_rd_empty;
   wire[6:0]			c3_p2_rd_count;
   wire				c3_p2_rd_overflow;
-  wire				c3_p2_rd_error;
+  wire				c3_p2_rd_error;*/
   wire				c3_p3_cmd_clk;
   wire				c3_p3_cmd_en;
   wire[2:0]			c3_p3_cmd_instr;

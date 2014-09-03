@@ -242,7 +242,7 @@ wb_mux
 wb_mux
   #(.num_slaves (3),
     .MATCH_ADDR ({32'h00000000, 32'h9e000000, 32'h90000000}),
-    .MATCH_MASK ({32'hfe000000, 32'hffffffe0, 32'hfffffff8}))
+    .MATCH_MASK ({32'hfe000000, 32'hffffff80, 32'hfffffff8}))
  wb_mux_or1k_d
    (.wb_clk_i  (wb_clk_i),
     .wb_rst_i  (wb_rst_i),
@@ -274,7 +274,7 @@ wb_mux
 wb_mux
   #(.num_slaves (3),
     .MATCH_ADDR ({32'h00000000, 32'h9e000000, 32'h90000000}),
-    .MATCH_MASK ({32'hfe000000, 32'hffffffe0, 32'hfffffff8}))
+    .MATCH_MASK ({32'hfe000000, 32'hffffff80, 32'hfffffff8}))
  wb_mux_dbg
    (.wb_clk_i  (wb_clk_i),
     .wb_rst_i  (wb_rst_i),

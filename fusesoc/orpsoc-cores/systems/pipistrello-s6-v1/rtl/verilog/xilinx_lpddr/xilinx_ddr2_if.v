@@ -142,15 +142,15 @@ module xilinx_ddr2_if (
 `include "orpsoc-defines.v"
 `include "xilinx_ddr2_params.v"
     parameter NUM_USERPORTS = 6;
-    parameter P0_BURST_ADDR_WIDTH = 5; //4;
+    parameter P0_BURST_ADDR_WIDTH = 4; //5; //4;
     parameter P0_BURST_ADDR_ALIGN = P0_BURST_ADDR_WIDTH + 2;
 	 parameter P0_WB_BURSTING      = "TRUE";
 	 
-    parameter P1_BURST_ADDR_WIDTH = 6;//5;
+    parameter P1_BURST_ADDR_WIDTH = 5;//6;//5;
     parameter P1_BURST_ADDR_ALIGN = P1_BURST_ADDR_WIDTH + 2;
 	 parameter P1_WB_BURSTING      = "TRUE";
   
-    parameter P2_BURST_ADDR_WIDTH = 4;
+    parameter P2_BURST_ADDR_WIDTH = 6; //4;
     parameter P2_BURST_ADDR_ALIGN = P2_BURST_ADDR_WIDTH + 2;
 	 parameter P2_WB_BURSTING      = "TRUE";
   
@@ -746,8 +746,8 @@ module xilinx_ddr2_if (
     .c3_p1_rd_empty       (ddr2_px_rd_empty[1]),
     .c3_p1_rd_count       (ddr2_px_rd_count[1]),
     .c3_p1_rd_overflow    (ddr2_px_rd_overflow[1]),
-    .c3_p1_rd_error       (ddr2_px_rd_error[1])
-/*    .c3_p2_cmd_clk        (wb_clk),
+    .c3_p1_rd_error       (ddr2_px_rd_error[1]),
+    .c3_p2_cmd_clk        (wb_clk),
     .c3_p2_cmd_en         (ddr2_px_cmd_en[2] & !wb_px_we_i[2]),
     .c3_p2_cmd_instr      (ddr2_px_cmd_instr[2]),
     .c3_p2_cmd_bl         (ddr2_px_cmd_bl[2]),
@@ -761,8 +761,8 @@ module xilinx_ddr2_if (
     .c3_p2_rd_empty       (ddr2_px_rd_empty[2]),
     .c3_p2_rd_count       (ddr2_px_rd_count[2]),
     .c3_p2_rd_overflow    (ddr2_px_rd_overflow[2]),
-    .c3_p2_rd_error       (ddr2_px_rd_error[2]),
-    .c3_p3_cmd_clk        (wb_clk),
+    .c3_p2_rd_error       (ddr2_px_rd_error[2])
+/*    .c3_p3_cmd_clk        (wb_clk),
     .c3_p3_cmd_en         (ddr2_px_cmd_en[2] & wb_px_we_i[2]),
     .c3_p3_cmd_instr      (ddr2_px_cmd_instr[2]),
     .c3_p3_cmd_bl         (ddr2_px_cmd_bl[2]),
