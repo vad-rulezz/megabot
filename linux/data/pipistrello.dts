@@ -7,6 +7,7 @@
 
 	chosen {
 		bootargs = "console=uart,mmio,0x90000000,115200";
+		//bootargs = "console=uart,mmio,0x90000000,115200 ip=::::pipistrello::dhcp root=/dev/mmcblk0p1 rw rootdelay=1";
 	};
 
 	memory@0 {
@@ -40,6 +41,11 @@
 		reg = <0x90000000 0x100>;
 		interrupts = <2>;
 		clock-frequency = <25000000>;
+	};
+	ocsdc0:   ocsdc@9e000000 {
+		compatible = "opencores,ocsdc";
+		reg = <0x9e000000 0x64>;
+		interrupts = <14 15>;
 	};
 /*
 	enet0: ethoc@92000000 {
