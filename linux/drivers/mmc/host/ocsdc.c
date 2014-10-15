@@ -59,11 +59,9 @@
 
 // SDCMSC_DAT_INT_STATUS
 #define OCSDC_DAT_INT_STATUS_CC   0x01
-#define OCSDC_DAT_INT_STATUS_EI   0x02
-#define OCSDC_DAT_INT_STATUS_CTE  0x04
-#define OCSDC_DAT_INT_STATUS_CCRC 0x08
-#define OCSDC_DAT_INT_STATUS_CFE  0x10
-#define OCSDC_DAT_INT_ENABLE_ALL  0x1F
+#define OCSDC_DAT_INT_STATUS_CCRC 0x02
+#define OCSDC_DAT_INT_STATUS_CFE  0x04
+#define OCSDC_DAT_INT_ENABLE_ALL  0x07
 
 #define readl(addr) (*(volatile unsigned int *) (addr))
 #define writel(b, addr) ((*(volatile unsigned int *) (addr)) = (b))
@@ -266,7 +264,6 @@ static irqreturn_t ocsdc_irq_cmd(int irq, struct mmc_host *mmc) {
 	struct ocsdc_dev * dev = mmc_priv(mmc);
 	struct mmc_command * cmd = dev->curr_cmd;
 	struct mmc_data	* data = dev->curr_data;
-	u8 ier;
 
 	uint32_t status = ocsdc_read(dev, OCSDC_CMD_INT_STATUS);
 //	printk("ocsdc_irq_cmd %x, cmd %d\n", status, dev->curr_cmd->opcode);
@@ -308,12 +305,6 @@ static irqreturn_t ocsdc_irq_cmd(int irq, struct mmc_host *mmc) {
 	}
 	else {
 		/* waiting for data interrupt */
-		ier = 0;
-		ier |= OCSDC_DAT_INT_STATUS_CC;
-		ier |= OCSDC_DAT_INT_STATUS_CFE;
-		ier |= OCSDC_DAT_INT_STATUS_CCRC;
-		ier |= OCSDC_DAT_INT_STATUS_CTE;
-//		ier |= OCSDC_DAT_INT_STATUS_EI;
 		ocsdc_write(dev, OCSDC_DAT_INT_ENABLE, OCSDC_DAT_INT_ENABLE_ALL);
 		
 	}
@@ -330,12 +321,7 @@ static irqreturn_t ocsdc_irq_data(int irq, struct mmc_host *mmc) {
     	data->bytes_xfered = data->blocks * data->blksz;
     }
     else {
-//	if (status & OCSDC_DAT_INT_STATUS_EI) 
-//    i=0;	    //data->bytes_xfered = data->blocks * data->blksz;
-//    	else
-    	 if (status & OCSDC_DAT_INT_STATUS_CTE)
-    		data->error = -ETIMEDOUT;
-    	else if (status & OCSDC_DAT_INT_STATUS_CCRC)
+ 	if (status & OCSDC_DAT_INT_STATUS_CCRC)
     		data->error = -EILSEQ;
     	else if (status & OCSDC_DAT_INT_STATUS_CFE)
     		data->error = -EILSEQ;
