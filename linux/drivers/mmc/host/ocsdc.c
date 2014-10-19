@@ -324,7 +324,7 @@ static irqreturn_t ocsdc_irq_data(int irq, struct mmc_host *mmc) {
  	if (status & OCSDC_DAT_INT_STATUS_CCRC)
     		data->error = -EILSEQ;
     	else if (status & OCSDC_DAT_INT_STATUS_CFE)
-    		data->error = -EILSEQ;
+    		data->error = -ETIMEDOUT; //EILSEQ;
     	else {
     		dev_err(mmc_dev(mmc), "Wrong data interrupt status 0x%x\n", status);
     		return IRQ_NONE;
